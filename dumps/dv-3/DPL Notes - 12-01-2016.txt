@@ -1,0 +1,31 @@
+
+
+A1
+* No drop shadow in mobile for top of breadcrum. Solid border is needed there - Closed	
+* Mobile: fix breadcrum alignment 	---DONE - Closed
+
+calculator Overlay
+* update spacing as per jack's design.  --DONE - Closed
+
+
+Invitation overlay  --DONE
+
+* 40px between "Continue" & "Where do i find.." link - Closed(As per the discussion)
+
+* Reduce spacing between "invitation input boxes & "Where do i find.." - Closed
+
+* Change font weight to "Normal" from "Medium" for "Where do i find.." ------DONE Closed
+
+A2
+* Need to correct "Financial Information" field validation:   --DONE
+ - No validation needed on 3rd box. don't disable them.- Closed
+ - 2nd & 4th box validation triggers on blur only if no values entered in 1st and 3rd for less than value
+  2nd value <= 1st vaue, 4th value <= 3rd value - Closed
+ - No need to disable them only highlight them using standard red border and icon -Closed
+ - Mobile: FOr some of the fields red exclamation not aligned well to right side.- Reopen(
+
+t-submitapplication                   --DONE
+* No blue outline needed for checkbox.- Closed
+* Citizenship info drop down options list mixes with bottom gret footer. Need a border bottom around options list and make it appear above bottom bar. - Closed
+* "Submit Application" mandatory field validation error message to be same as "Continue" click from A1 & A2  --ref final mail - Reopen(On IE8 no any error message displays,consider Screenshot):-DONE
+* Border color to be corrected when error on checkbox, it shows both red & grey.- Closed

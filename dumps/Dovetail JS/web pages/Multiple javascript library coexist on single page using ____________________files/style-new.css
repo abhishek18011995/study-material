@@ -1,0 +1,1333 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* RESET
+========================================================================*/
+@charset "utf-8";
+/* CSS Document */
+
+/* HTML5 display definitions
+========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline;
+*zoom: 1;
+}
+audio:not([controls]) {
+display: none;
+}
+[hidden] {
+display: none;
+}
+/* Base
+========================================================================*/
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; overflow-x:hidden;}
+::-moz-selection {
+background:#73ad21;
+color:#FFF;
+text-shadow: none;
+}
+::selection {
+background:#73ad21;
+color:#FFF;
+text-shadow: none;
+}
+p{ line-height:30px; }
+/* GLOBAL RESETS
+========================================================================*/
+* { padding:0; margin:0; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+ol, ul { list-style:none }
+a { margin:0px; padding:3px 0px; color:#006699; list-style-type:none; text-decoration:none;}
+a:hover { text-decoration:underline;}
+:focus, a:focus { outline:none; }
+:active, a:active { outline:none; }
+:focus { -moz-outline-style:none; }
+/* TABLE
+========================================================================*/
+table { border-collapse:collapse; border-spacing:0}
+th, td, caption { font-weight: normal; vertical-align: top; text-align: left; }
+/* IMAGES
+========================================================================*/
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; max-width:100%; }
+svg:not(:root) {
+overflow: hidden;
+}
+img.flLeft { margin-right:15px; }
+img.flRight { margin-left:15px; }
+/* POSITION ABSOLUTE
+========================================================================*/
+.absolute { position:absolute }
+.absoluted > * { position:absolute }
+/* POSITION RELATIVE
+========================================================================*/
+.rel { position:relative }
+/* GLOBAL FLOAT
+========================================================================*/
+.flLeft { float:left; }
+.flRight { float:right; }
+/* CLEAR FLOAT
+========================================================================*/
+.clearfix:after { content:"\0020"; display:block; height:0; clear:both; visibility:hidden; overflow:hidden }
+.clear { clear:both; padding:0; margin:0; overflow:hidden; height:0 }
+/* DISPLAY INLINE
+========================================================================*/
+.inline { display:inline }
+/* DEFAULT FORM STYLING
+========================================================================*/
+input[type="radio"], input[type="checkbox"] { vertical-align:-2px }
+textarea { resize:none; overflow:auto }
+input { visibility:visible; outline:none }
+/* MARGIN 0
+========================================================================*/
+.mrgLast { margin-right:0 !important }
+.mrgFirst { margin-left:0 !important }
+/* FORM
+========================================================================*/
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+legend { border: 0; *margin-left: -7px;
+padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;
+}
+button, input { line-height: normal; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px;
+*height: 13px;
+}
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+-webkit-appearance: none;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible;
+}
+button[disabled], input[disabled] { cursor: default; }
+button::-moz-focus-inner, input::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+/* Chrome Frame Prompt
+========================================================================*/
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* STYLE
+========================================================================*/
+body{ margin:0px; padding:0px; font-size:15px; line-height:23px; color:#fff; font-family:"Helvetica", Open Sans, Arial, sans-serif, Verdana; background:#FFF;}
+
+/* MAIN LAYOUT
+========================================================================*/
+.wrapper { width:1000px; margin:auto;}
+.wrapper, .container, div, img { transition:all 0.5s ease-in-out;}
+
+/* HEADER
+========================================================================*/
+header { width:100%;  background:rgba(0, 0, 0, 0) linear-gradient(to top, #f6f6f6 47px, #fff 100%) repeat scroll 0 0; border-bottom:1px solid #d6d6d6; margin:0px; padding:15px 0 5px 0; display:block; z-index:1; height:auto; position:fixed;}
+
+.headertopright{ margin:0px; padding:0px; float:right;}
+
+/* LOGO
+========================================================================*/
+.logo { margin:0px;}
+.logo a { display:inline-block; padding:0px; line-height:0px;}
+.logo a img{ max-width:100%; }
+
+/* CSE-SEARCH-BOX
+========================================================================*/
+#cse-search-box{ margin:0px 0px 15px 20px; padding:0px; float:right; width:202px; display:block; position:relative;}
+#cse-search-box input[type="text"]{ width:160px; margin:0px; padding:4px 5px !important; display:inline-block; font-size:14px; font-weight:normal; color:#333; border:1px solid #333;}
+#cse-search-box input[type="submit"]{ width:30px; margin:0px; height:26px; display:inline-block; background: url(http://cdn.careerride.com/images/new/search.png) center no-repeat #006699; border:0px; position:absolute;}
+
+/* SOCIAL ICONS
+========================================================================*/
+.social-icons{ margin:0px 0px 0px 20px; padding:0px; float:left; display:block;}
+.social-icons ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px;}
+.social-icons ul li{ margin:0px 6px 0 0; float:left;}
+.social-icons ul li a{ margin:0px; padding:0px; font-size:0px; line-height:0px; display:block;}
+
+
+/* ADS-SEC
+========================================================================*/
+.ads-sec{ width:100%; height:auto; margin:0px; padding:98px 0 20px 0; display:block; text-align:center; background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #D3D8E8 0px, #fff 100%) repeat scroll 0 0; overflow:hidden;}
+.ads-sec a img{ max-width:100%; margin:0 0 10px 0}
+
+.ads-sec-new{ width:100%; height:auto; margin:0px 0 14px 0; display:block; text-align:center; overflow:hidden;background:#f1f1f1;}
+.ads-sec-new a img{ max-width:100%; margin:0 0 10px 0}
+
+/* NAV
+========================================================================*/
+nav { margin:0px; padding:0px; display:block; width:100%; height:auto;}
+nav ul { list-style-type:none; text-decoration:none; margin:0px 0 0 -10px; padding:0px;}
+nav ul li { float:left; margin:0px; line-height:0px;}
+nav ul li a { display:block; font-size:14px; line-height:16px; font-weight:bold; color:#000; padding:5px 12px; border-radius:5px;}
+nav ul li a:hover, nav ul li.active a, nav ul li:hover a { text-decoration:none; color:#ffffff; background:#73ad21;}
+/* Level 1
+==========================================================================*/
+nav ul li ul { position:absolute; background: url(images/nav-bg.png) 0 0 scroll repeat; width:180px; display:none; }
+nav ul li:hover ul { display:block; }
+nav ul li ul li { float:none; margin: 0; padding:0; }
+nav ul li ul li a, nav ul li.active ul li a, nav ul li:hover ul li a { font-size:12px; padding: 8px 10px; border-bottom:1px solid #fff; color:#ffffff; line-height:18px; }
+nav ul li ul li a:hover, nav ul li ul li.active a { display:block; border-bottom:none; background:#3A73A0; padding: 9px 10px; }
+/* level 2
+============================================================================*/
+nav ul li:hover ul li ul { display:none; }
+nav ul li ul li ul { margin: -35px 0 0 180px; position: absolute; width: 180px; display:none; background: url(images/nav-bg.png) 0 0 scroll repeat; }
+nav ul li ul li:hover ul { display:block; }
+nav ul li ul li a, nav ul li.active ul li a, nav ul li ul li:hover ul li a { text-transform:none; }
+/* level 3
+============================================================================*/
+nav ul li:hover ul li ul li ul { display:none; }
+nav ul li ul li ul li ul { margin: -35px 0 0 180px; position: absolute; width: 180px; display:none; background:url(images/nav-bg.png) 0 0 scroll repeat; }
+nav ul li ul li ul li:hover ul { display:block; }
+nav ul li ul li ul li a, nav ul li ul li.active ul li a, nav ul li ul li:hover ul li a { text-transform:none; }
+
+.active1{ display:block; font-size:14px; font-weight:bold; color:#000; padding:5px 12px; border-radius:5px; position:absolute;}
+
+
+/* BANNER-INDEX
+========================================================================*/
+.banner-index {margin:0px; padding:0px; width:100%; display:block; background:url(http://cdn.careerride.com/images/new/banner-index-new.jpg);-webkit-background-size:cover;  -moz-background-size:cover;  -o-background-size:cover;background-size:cover;background-position:bottom;background-attachment:fixed; height:700px; overflow:hidden;position:absolute;overflow:hidden;}    
+.banner-index .banner-search {text-align:center;display:block;width:100%;height:40px;margin:0px 0 0px 0px;}  
+.banner-index .banner-search ul{list-style-type:none; text-decoration:none;display:inline-block;margin:0;padding:0;}
+.banner-index .banner-search ul li{ float:left;margin:0;display:inline-block;padding:0 0 2px 0;}
+.banner-index .banner-search ul li input{line-height:2;padding-left:2px;}
+.banner-index .banner-search ul li select{vertical-align:middle;height:34px;margin:0 0 0px 0;width:100px;}
+.banner-index .banner-search .search-button {background-color: #73ad21;border: none; color: white;padding: 4px 12px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;margin:0;cursor: pointer;}
+.banner-index .banner-search .search-button:hover {background-color: #3e8e41;}
+.banner-index .banner-search ul li .newbtn{ margin-left:2px; padding:5px 20px; font-size:14px; line-height:23px; color:#fff; font-weight:bold; text-align:center; border:0px; background:#73ad21; display:inline-block; box-shadow:0 0 5px #ccc;}
+.banner-index .banner-search ul li .newbtn:hover{ text-decoration:none; background:#14558c;}
+
+.banner-index .banner-top {display :block;float:left;margin:83px 0 50px 0px;background-color: rgba(35,48,63,.2);width:100%;}
+.banner-index .banner-top ul{list-style-type:none; text-decoration:none;display:inline-block;margin:0;padding:0 0 0 2.3%;width:100%;}
+.banner-index .banner-top ul li{margin:0;display:inline-block;padding:5px 0 0 0;}
+.banner-index .banner-top ul li a{ margin:0;padding:5px 12px;color:white;text-decoration:none;font-weight:bold;font-size:13px;}
+.banner-index .banner-top ul li a:hover { background-color:rgba(35,48,63,.6);border-bottom:4px solid #006699;}
+
+/* BANNER-JOB
+========================================================================*/
+        .banner-job {margin:0px; padding:0px; width:100%; display:block; background:url(http://cdn.careerride.com/images/new/banner-index.jpg);-webkit-background-size:cover;  -moz-background-size:cover;  -o-background-size:cover;background-size:cover;background-position:top; height:280px; overflow:hidden;}
+        .banner-job .banner-job-search {display:block;width:100%;height:40px;margin:0px 0 0px 3%;} 
+        .banner-job .banner-job-search ul{list-style-type:none; text-decoration:none;display:inline-block;margin:0;padding:0;}
+        .banner-job .banner-job-search ul li{ float:left;margin:0;display:inline-block;padding:0 0 2px 0;}
+        .banner-job .banner-job-search ul li input{line-height:2;padding-left:2px;}
+        .banner-job .banner-job-search ul li select{vertical-align:middle;height:34px;margin:0 0 0px 0;width:100px;}
+        .banner-job .banner-job-search .search-button {background-color: #73ad21;border: none; color: white;padding: 4px 12px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;margin:0;cursor: pointer;}
+        .banner-job .banner-job-search .search-button:hover {background-color: #3e8e41;}
+        .banner-job .banner-job-search ul li .newbtn{ margin-left:2px; padding:5px 20px; font-size:14px; line-height:23px; color:#fff; font-weight:bold; text-align:center; border:0px; background:#73ad21; display:inline-block; box-shadow:0 0 5px #ccc;}
+        .banner-job .banner-job-search ul li .newbtn:hover{ text-decoration:none; background:#14558c;}
+        .banner-job .banner-job-top {display :block;float:left;margin:83px 0 50px 0px;background-color: rgba(35,48,63,.2);width:100%;}
+        .banner-job .banner-job-top ul{list-style-type:none; text-decoration:none;display:inline-block;margin:0;padding:0 0 0 2.3%;width:100%;}
+        .banner-job .banner-job-top ul li{margin:0;display:inline-block;padding:5px 0 0 0;}
+        .banner-job .banner-job-top ul li a{ margin:0;padding:5px 12px;color:white;text-decoration:none;font-weight:bold;font-size:13px;}
+        .banner-job .banner-job-top ul li a:hover { background-color:rgba(35,48,63,.6);border-bottom:4px solid #006699;}
+        .lblApplied{ margin:0px; padding:5px 10px; font-size:14px; line-height:18px; color:#73ad21; font-weight:bold; text-align:center; border:0px; display:inline-block; border:1px solid #73ad21;}
+
+/* MIDDLE-SEC
+========================================================================*/
+.middle-sec{ width:100%; display:block; margin:0px; padding:20px 0 20px 0px; overflow:hidden;}
+.middle-sec h1{ text-align:center; text-shadow:2px 2px 3px #ccc;}
+
+.middle-sec-1{ width:100%; display:block; margin:0px; padding:90px 0 9px 0; overflow:hidden;}
+.middle-sec-1 h1{ text-align:center; text-shadow:2px 2px 3px #ccc;}
+
+/* MIDDLE-SEC - NEW
+========================================================================*/
+.middle-sec-2{ display:block; margin:0px; padding:90px 0 9px 0; overflow:hidden; width:85%;margin:auto;}
+.middle-sec-2 h1{ text-align:left; text-shadow:2px 2px 3px #ccc;}
+
+.rightcolumn-inner-1{ margin:0px 0 0 0px; text-align:center; width:100%; display:block;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.rightcolumn-inner-1 img{ text-align:center;} 
+
+.menu-items-rt{ margin:0px; padding:0px; display:block; width:100%;overflow:hidden;}
+.menu-items-rt h6{ margin:0px; color:teal; font-weight:bold; background:#f1f1f1; padding:10px 0px 10px 10px;text-align:left;}
+.menu-items-rt ul{list-style-type:none; text-decoration:none; margin:0px 0 10px 0; padding:0px; background:white;}
+.menu-items-rt ul li{ margin:0px;  text-align:left;}
+.menu-items-rt ul li a{ padding:8px 15px; display:block; color:#006699; font-size:13px; font-weight:bold; line-height:18px; border-bottom:1px solid #dddce0;}
+.menu-items-rt ul li a:hover{ text-decoration:none;}
+
+.menu-items-rt-top{ margin:0px 0px 0px;padding:0; display:block; overflow:hidden;width:100%;border-bottom:1px solid #dddce0;}
+.menu-items-rt-top ul{ list-style-type:none;margin:0;padding:0;font-size: 13px; position:relative;color:#12538a;}
+.menu-items-rt-top ul li{ display:inline-block;padding:63px 0 0; margin:0; width:24%; float:left;}
+.menu-items-rt-top ul li a{ padding:40px 1px 10px;margin:0px;  color:#14558c; font-size:13px; line-height:16px; text-align:center; background:url(http://cdn.careerride.com/images/new/index-menu-icon.png) no-repeat;}
+.menu-items-rt-top ul li:hover{background-color: #f0f0f0;}
+
+.menu-items-rt-top ul li a.tutorials{ background-position:-328px -118px;}
+.menu-items-rt-top ul li a.english{ background-position:-508px -117px;}
+.menu-items-rt-top ul li a.quesans{ background-position:-1014px 0px;}
+.menu-items-rt-top ul li a.mcqs{ background-position:-680px -116px}
+
+.ads-bottom{ margin:0px;padding:0; overflow:hidden;width:100%;}
+.ads-bottom ul{ list-style-type:none;margin:0;padding:0;}
+.ads-bottom ul li{ display:inline-block; padding:0 0 10px 0;width:49%; float:left;}
+.ads-right{ margin:15px 0 15px 0px;}    
+
+
+/* COLUMN
+========================================================================*/
+.leftcolumn{ margin:0px; width:100%; display:block;}
+.menu-items{ margin:0px; padding:0px; display:block; width:100%;overflow:hidden;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;border-radius: 5px 5px 0px 0px;}
+.menu-items h6{ margin:0px; color:teal; font-weight:bold; background:#f1f1f1; padding:4px 0px 4px 10px; border-radius:5px 5px 0px 0px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.menu-items ul{list-style-type:none; text-decoration:none; margin:0px 0 10px 0; padding:0px; background:white;}
+.menu-items ul li{ margin:0px;}
+.menu-items ul li a{ padding:8px 15px; display:block; color:#006699; font-size:13px; line-height:18px; border-bottom:1px solid #dddce0;}
+.menu-items ul li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+ul.one-link-for-multiple-line{ list-style-type:none; text-decoration:none; margin:0px 0 10px 0; padding:0px;}
+ul.one-link-for-multiple-line li{ margin:0px;}
+ul.one-link-for-multiple-line li a{ padding:5px 0px 5px 10px; display:block; color:#000; font-size:0.9em; line-height:26px; border-bottom:0px;}
+ul.one-link-for-multiple-line li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+.pagedata{ margin:0px auto; padding:0px; width:98%; display:block;}
+.pagedata h3{ margin:0px 0 10px;}
+.pagedata h4{background-color: #f1f1f1; color:#666;padding:2% 1%;display:block;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.pagedata h4 a{color:#73ad21;text-decoration:none;}
+.pagedata h4 a:hover {color:#14558c;text-decoration:none;}
+.pagedata h4.underlined{ margin:0px 0px 10px; padding:0px 0px 4px 10px; border-bottom:2px solid #F1F1F1;}
+.pagedata p{ margin:10px 0px 10px;}
+.pagedata ul{ text-decoration:none; list-style-type:disc; margin:0px 3px 40px 5px; padding:0 0 0 10px; color:#000;} 
+.pagedata ul li{ margin:0px; line-height:26px;}
+
+.pagedata ul.disc{ list-style-type:disc;}
+.pagedata img {float:right; padding:15px;} 
+
+.rightcolumn{ margin:0px; width:100%; display:block;}
+
+
+.hide{ display:block;}
+
+
+/* COLUMN-FOR-INNER-PAGES
+========================================================================*/
+.leftcolumn-inner{ margin:0 0 0 0px; width:100%; display:block;}
+
+.pagedata-inner{ margin:0px auto; padding:0px; width:98%; display:block;}
+.pagedata-inner h3{ margin:0px 0px 10px;}
+.pagedata-inner h4{ margin:0px 0px 10px;}
+.pagedata-inner h4.underlined{ margin:0px 10px 10px; padding:0px 0px 4px 10px; border-bottom:2px solid #F1F1F1;}
+.pagedata-inner h4.new{background-color: #f1f1f1; color:#666; padding:2% 1%;display:block;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.pagedata-inner p{ margin:10px 0;}
+
+.pagedata-inner-1{ margin:0px auto; padding:0px; width:98%; display:block;}
+.pagedata-inner-1 h1 {text-align: center; text-shadow: 2px 2px 3px #ccc;margin-top:15px;margin-bottom:15px;}
+.pagedata-inner-1 h3{ margin:0px 0px 10px;}
+.pagedata-inner-1 h4{ margin:0px 0px 10px;}
+.pagedata-inner-1 h4.underlined{ margin:0px 10px 10px; padding:0px 0px 4px 10px; border-bottom:2px solid #F1F1F1;}
+.pagedata-inner-1 h4.new{background-color: #f1f1f1; color:#666; padding:2% 1%;display:block;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.pagedata-inner-1 p{ margin:10px 0;}
+
+.pagedata-inner-2 { margin:0; padding:0 2px 0 2px; width:100%; display:block;background-color:white;box-shadow: 0 6px 15px rgba(0,0,0,0.2) ;}
+.pagedata-inner-2 h1{ margin:0;padding:7px 0 7px 0; border-bottom:1px solid #ccc; text-align:center;}
+.pagedata-inner-2 h2{ padding:10px 0 7px 0; border-bottom:1px solid #ccc; text-align:left;}
+.pagedata-inner-2 .button { margin-left:2px; padding:5px 20px; font-size:14px; line-height:23px; color:#fff; font-weight:bold; text-align:center; border:0px; background:#73ad21; display:inline-block; box-shadow:0 0 5px #ccc;}
+.pagedata-inner-2 .button:hover{ text-decoration:none; background:#14558c;}
+
+.pagedata-main{ margin:0px auto; padding:0px; width:98%; display:block;}
+.pagedata-main h1 {text-align: left; text-shadow: 2px 2px 3px #ccc;}
+.pagedata-main h3{ margin:0px 0px 10px;}
+.pagedata-main h4{ margin:0px 0px 10px;}
+.pagedata-main h4.underlined{ margin:0px 10px 10px; padding:0px 0px 4px 10px; border-bottom:2px solid #F1F1F1;}
+.pagedata-main h4.new{background-color: #f1f1f1; color:#666; padding:2% 1%;display:block;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.pagedata-main p{ margin:10px 0;}
+
+.rightcolumn-inner{ margin:0px 0 0 0px; text-align:center; width:100% display:block;}
+.rightcolumn-inner img{ text-align:center;} 
+
+.adsbottommargin{ margin:0px 0 5px;}
+
+
+/* NEXTPREV
+========================================================================*/
+.nextprev{ margin:10px 0px; padding:0px; display:block; overflow:hidden;}
+.nextprev ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px;}
+.nextprev ul li{ float:left;}
+.nextprev ul li:nth-child(1){ float:left;}
+.nextprev ul li:nth-child(2){ float:right;}
+.nextprev ul li a{ color:#73ad21; font-size:18px; line-height:18px;}
+.nextprev ul li a:hover{ text-decoration:underline;}
+
+/* BREADCRUMB
+========================================================================*/
+.breadcrumb{ display:block; margin:0px; padding:0px;}
+.breadcrumb ul{ list-style-type:none; text-decoration:none;  margin:0px; padding:0px;}
+.breadcrumb ul li{ margin:0 6px 0 0; float:left; color:#000; font-size:12px; line-height:14px;}
+.breadcrumb ul li a{ padding:0px; color:#006699; font-size:12px; line-height:14px;}
+.breadcrumb ul li a:hover{ text-decoration:underline;}
+
+/* ERROR MESSAGE
+========================================================================*/
+
+.error-msg{text-align:center;color:red;padding:2px 15px; border:1px solid maroon;}
+
+/* BREADCRUMB WITH BOTTOM MARGIN
+========================================================================*/
+.breadcrumbbottommargin{ display:block; margin:0px 0 10px; padding:0px;}
+.breadcrumbbottommargin ul{ list-style-type:none; text-decoration:none;  margin:0px; padding:0px;}
+.breadcrumbbottommargin ul li{ margin:0 6px 0 0; float:left; color:#000; font-size:12px; line-height:14px;}
+.breadcrumbbottommargin ul li a{ padding:0px; color:#006699; font-size:12px; line-height:14px;}
+.breadcrumbbottommargin ul li a:hover{ text-decoration:underline;}
+
+/* JOBS
+========================================================================*/
+.jobs-listing { padding: 15px;border-bottom: 1px solid #cdcdcd; }
+.jobs-listing h4 {color:#14558c;margin-bottom:8px;padding:0;}
+.jobs-listing ul{ list-style-type:none;padding:0;margin:0;display :block;  }
+.jobs-listing ul li { padding:0;margin-right:4px;display:inline-block;font-size: 1em;margin-bottom: 0.9375em;line-height: 1.375em;color:#666; }
+.jobs-listing p { padding:0;margin:0px;font-size: 1em;line-height: 1.375em;float:right;color:#666;}
+
+.jobs-listing-no-border { padding: 15px;}
+.jobs-listing-no-border h4 {color:#14558c;margin-bottom:8px;padding:0;}
+.jobs-listing-no-border ul{ list-style-type:none;padding:0;margin:0;display :block;  }
+.jobs-listing-no-border ul li { padding:0;margin-right:4px;display:inline-block;font-size: 1em;margin-bottom: 0.9375em;line-height: 1.375em;color:#666; }
+.jobs-listing-no-border p { padding:0;margin:0px;font-size: 1em;line-height: 1.375em;float:right;color:#666;}
+
+
+.jobs-left-menu{background: #fff;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.jobs-left-menu h3{padding: 3px;font-size: 14px;font-weight: bold;background-color:#E3FEAB;color:#666;}
+.jobs-left-menu ul{list-style-type:none;padding:0;margin:0;display :block; }
+.jobs-left-menu ul li {padding:0;margin-left:5px;}
+.jobs-left-menu ul li a {color:#666;text-decoration :none;}
+.jobs-left-menu ul li a:hover{color:#14558c;}
+
+.jobs-left-menu-sec{background: #fff;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.jobs-left-menu-sec ul{list-style-type:none;padding:0;margin:0;display :block;list-style-image:url('http://cdn.careerride.com/images/new/tick.png'); }
+.jobs-left-menu-sec ul li {padding:0;margin-left:25px;}
+.jobs-left-menu-sec ul li a{padding:0;margin:0;color:#3b81de}
+
+.jobs-right-menu {width:100%;padding:0;margin-bottom:5px;display :block;background: #fff;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.jobs-right-menu h3 {padding: 3px;font-size: 14px;font-weight: bold;background-color: #E3FEAB;color: #666;}
+.jobs-right-menu ul {color:#666;width:98%;padding:2px;margin:0;display :block;border-bottom:1px solid #ccc;}
+.jobs-right-menu ul li{width:48%;padding:0;margin-left:5px;display :inline-block;}
+.jobs-right-menu:hover {cursor:pointer;background-color: #f0f0f0;}
+
+/* ASIDE MENU
+========================================================================*/
+
+.aside-menu{padding:0;width:98%;}
+.aside-menu h4 { margin:0px;background-color: #d4d9e8;color: #666; padding: 6px 10px;display: block;border-top-left-radius:10px;border-top-right-radius:10px;}
+.aside-menu ul{list-style-type:none;margin:0;padding:0;}
+.aside-menu ul li{ border-bottom:1px solid #dddce0;padding:5px;margin:0;font-size: 13px; position:relative;color:#12538a;background-color:#f6f8f8;}
+.aside-menu ul li:hover{cursor:pointer;background-color: #f0f0f0;}
+.aside-menu img{margin-right:8px;}
+
+.nav-menu-btn{margin:0 0 5px 15px;padding:0;}
+.mySidenav{width:0px;}
+.sidenav{height:370px;width:0;position:fixed;z-index:1;overflow-x:hidden;transition:.5s}
+.sidenav .closebtn{position:absolute;top:2px;right:25px;font-size:22px;margin-left:50px; }
+.closebtn:hover{right:21px;top:5px;border-radius: 50%;width:22px;padding:0;background-color:#d9534f;text-align:center;color:white;text-decoration:none;}
+.leftmenu-toggle{float:left;margin:2px 1% 0 0;width:40px;height:20px;background:url(http://cdn.careerride.com/images/new/button.png) center no-repeat #73ad21;border:0}
+.leftmenu-toggle:hover{cursor:pointer;}
+
+/* FOOTER
+========================================================================*/
+footer{ width:100%; display:block; margin:0px; padding:0px; overflow:hidden;text-align:center; }
+footer .footer-top-sec{ width:100%; margin:0px; padding:2% 0; background:#f1f1f1; }
+footer .footer-top-sec h3{padding:10px 0 15px 0px; margin:0px;color:#555555;font-weight:bold;text-align:left; }
+footer .footer-top-sec ul{display:inline-block; list-style-type:none; text-decoration:none; margin:0px 0 10px 0px; padding:0px;text-align:left;}
+footer .footer-top-sec ul:nth-child(1){ margin:0px 0 10px 0px;}
+footer .footer-top-sec ul li{ margin:0px; }
+footer .footer-top-sec ul li a{ padding:4px 0px; display:block; color:#555555; font-size:14px; line-height:20px;}
+footer .footer-top-sec ul li a:hover{ text-decoration:none; color:#73ad21;}
+
+
+footer .footer-bottom-sec{ margin:0px; padding:0px; width:100%; display:block; background:#14558c; overflow:hidden;}
+footer .footer-bottom-sec ul{ list-style-type:none; text-decoration:none;display:inline-block;text-align:center; margin:15px 0; padding:0px;}
+footer .footer-bottom-sec ul li{ display:inline-block;text-align:center; margin-right:15px;}
+footer .footer-bottom-sec ul li a{ margin:0px; padding:0px; color:#fff; font-size:14px; line-height:16px;}
+footer .footer-bottom-sec ul li a:hover{ text-decoration:none; color:#73ad21;}
+
+
+.copyright{ margin:0px 0 6%; padding:0px; width:100%; display:block; color:#fff; font-size:14px; line-height:16px;}
+
+
+/* HEADINGS
+========================================================================*/
+h1, h2, h3, h4, h5, h6{ color:#000; margin-bottom:10px; padding:0px;}
+h1{ font-size:26px; line-height:27px;}
+h2{ font-size:23px; line-height:26px;}
+h3{ font-size:22px; line-height:23px;}
+h4{ font-size:18px; line-height:19px;}
+h5{ font-size:16px; line-height:17px;}
+h6{ font-size:14px; line-height:16px;}
+p{ margin-top:10px; text-align:left; font-size:15px; line-height:26px;}
+p:first-child{ margin:0; }
+
+p.bgtitle {background-color: LightGrey;}
+
+/* HR
+========================================================================*/
+hr{ margin-bottom:10px; padding:0px; display:block; width:100%; border-bottom:0px solid #F1F1F1;}
+hr.resume{ display:block; margin:0.5em auto; border-style:inset; border-width:1px;}
+
+/* TABLE
+========================================================================*/
+table { width:100%; border-collapse:collapse; border-spacing:10px; text-align:left; margin-left:0px; font-weight:normal; font-size:14px; color:black; line-height:21px;}
+table th, table td{ padding:0px; border:1px solid #f1f1f1;}
+
+table.mcq{ border:0px;}
+table.mcq th, table.mcq td{ margin:0px; padding:0px 10px 0px 0px; border:0px;}
+
+table.tablecontent{ width:100%;}
+table.tablecontent th, table.tablecontent td{ margin:0px; padding:4px; border:1px solid teal;}
+table.tablecontent th{ color:#333; font-weight:bold; font-size:13px; background:#E3FEAB; text-align:center;}
+
+table.tablecontentbordergray{ width:100%;}
+table.tablecontentbordergray th, table.tablecontentbordergray td{ margin:0px; padding:4px; border:1px solid #f1f1f1;}
+table.tablecontentbordergray th{ color:#333; font-weight:bold; font-size:13px; background:#E3FEAB; text-align:center;}
+
+table.tablecontentnoborder{ width:100%;}
+table.tablecontentnoborder th, table.tablecontentnoborder td{ margin:0px; padding:4px; border:0px;}
+
+table.onlinetest{ border:0px;}
+table.onlinetest th, table.onlinetest td{ margin:0px; padding:0px 0px 10px 0px; border:0px;}
+
+table.tablecontrol{ width:100%;}
+table.tablecontrol td:nth-child(1){ width:20%;}
+table.tablecontrol td:nth-child(2){ width:80%;}
+table.tablecontrol th, table.tablecontrol td{margin:0px; padding:0px 5px 5px 0px; border:0px; font-size:15px; line-height:23px; color:#000; font-family:"Helvetica", Open Sans, Arial, sans-serif, Verdana;}
+table.tablecontrol td input[type="text"]{ height:25px;  width:40%; padding-left:3px; border:1px solid #ccc;}
+table.tablecontrol td textarea{width:60%; padding-left:3px; border:1px solid #ccc;}
+table.tablecontrol td textarea:hover{ border:1px solid #006699;}
+table.tablecontrol td textarea:focus{ border:1px solid #006699;}
+table.tablecontrol td input[type="password"]{ height:25px;  width:30%; padding-left:2px; border:1px solid #ccc;}
+table.tablecontrol td input[type="text"]:hover, table.tablecontrol td input[type="password"]:hover{ border:1px solid #006699;}
+table.tablecontrol td input[type="text"]:focus, table.tablecontrol td input[type="password"]:focus{ border:1px solid #006699;}
+table.tablecontrol td input[type="radio"] { height:13px; width:25px;}
+table.tablecontrol td select { height:25px; width:100%; border:1px solid #ccc;}
+table.tablecontrol td select:hover{ border:1px solid #006699;}
+table.tablecontrol td select:focus{ border:1px solid #006699;}
+table.tablecontrol td label { font-size:14px; color:#333; height:25px;  width:30%;}
+
+table.tablecontrol1{ width:100%;}
+table.tablecontrol1 th, table.tablecontrol1 td{margin:0px; padding:0px 5px 5px 0px; border:0px; font-size:15px; line-height:23px; color:#000; font-family:"Helvetica", Open Sans, Arial, sans-serif, Verdana;}
+table.tablecontrol1 td input[type="text"]{ height:25px;  width:40%; padding-left:3px; border:1px solid #ccc;}
+table.tablecontrol1 td input[type="password"]{ height:25px;  width:30%; padding-left:2px; border:1px solid #ccc;}
+table.tablecontrol1 td input[type="text"]:hover, table.tablecontrol1 td input[type="password"]:hover{ border:1px solid #006699;}
+table.tablecontrol1 td input[type="text"]:focus, table.tablecontrol1 td input[type="password"]:focus{ border:1px solid #006699;}
+table.tablecontrol1 td input[type="radio"] { height:13px; width:25px;}
+table.tablecontrol1 td select { height:25px; width:100%; border:1px solid #ccc;}
+table.tablecontrol1 td select:hover{ border:1px solid #006699;}
+table.tablecontrol1 td select:focus{ border:1px solid #006699;}
+table.tablecontrol1 td label { font-size:14px; color:#333; height:25px;  width:30%;}
+
+/* TABLE-MATHS
+========================================================================*/
+table.maths{ width:auto; margin:0 0 0 -4px;}
+table.maths td{ text-align:center; vertical-align:middle; border:0px; padding:4px;}
+table.maths .td-vcenter{ vertical-align:middle; white-space:nowrap; height:auto;}
+table.maths .td-divident{ padding-bottom:2px; text-align:center; border-bottom:1px solid #000000; vertical-align:middle;}
+span.sroot{ padding:1px 0 0 10px; background:url(image/aptitude/sroot.png) no-repeat; background-position:top left;}
+
+
+/*========================================GridStyle*/
+
+    .GridPager a, .GridPager span
+    {
+        display:inline-block ;
+        height: 25px;
+        width: 30px;
+        font-weight: bold;
+        text-align: center;
+	vertical-align: middle; 	
+	text-decoration: none;
+
+        
+            
+    }
+    .GridPager a
+    {
+        background-color: #f5f5f5;
+        color: #969696;
+        border: 1px solid #969696;
+    }
+    .GridPager span
+    {
+        background-color: #A1DCF2;
+        color: #000;
+        border: 1px solid #3AC0F2;
+    }	
+
+/* Image and content + heading
+=================================================================*/
+
+
+.paratitle1
+{
+    width:100%;
+    margin:0px;  
+    padding:0px;
+    display:block;
+    text-align:left; font-size:16px; line-height:25px;
+    color:#000; font-family:"Helvetica", Open Sans, Arial, sans-serif, Verdana;     
+}
+
+.paratitle1 h2{font-size:22px; margin:20px 0px;}
+
+.rname
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: Black;
+	line-height: 28px;
+	font-family:"Helvetica", Open Sans, Arial, sans-serif, Verdana; 
+}
+
+
+.bgtitle {background-color: LightGrey;font-size:15px; font-weight:bold;text-align:center;  padding-left: 5px;padding-bottom: 5px;margin: 1em 0 1em;}
+/*==================*/
+
+.morenews{float:right;}
+
+
+/* PAGETOPCONTAINER
+========================================================================*/
+.pagetopcontainer{ display:block; margin:10px 0px 0px; padding:0px; overflow:hidden;}
+.pagetopcontainer ul{ list-style-type:none; text-decoration:none;  margin:0px; padding:0px;}
+.pagetopcontainer ul li{ margin:0 6px 0 0; float:left;}
+.pagetopcontainer ul li span{ margin:12px 0px 0px 0px; display:inline-block; font-size:12px; line-height:14px; font-weight:bold;}
+.pagetopcontainer ul li select{ color:#73ad21; font-weight:bold; width:180px;}
+.pagetopcontainer ul li select option{ padding:0px 0px 0px 7px;}
+
+/* SELECTED
+========================================================================*/
+span.selected-red{ background:#F00; padding:0px 3px;}
+span.selected-green{ background:#73ad21; padding:0px 3px;}
+span.selected-yellow{ background:#FF0; padding:0px 3px;}
+
+/* HIGHLIGHTER
+========================================================================*/
+span.highlighter-red{ color:#F00; font-weight:bold;}
+span.highlighter-green{ color:#73ad21; font-weight:bold;}
+span.highlighter-sgreen{ color:#73ad21; font-size:13px;}
+span.highlighter-orange{ color:#FF4500; font-weight:bold;}
+span.highlighter-sorange{ color:#FF4500; font-size:13px;}
+span.highlighter-yellow{ color:#FF0; font-weight:bold;}
+span.highlighter-sgray{ color:Gray; font-size:13px;}
+span.quescircle{ color:white; padding:3px 6px 3px 6px; font-size:13px; font-weight:bold; background:#73ad21; border:0px; border-radius:10px 10px 10px 10px;}
+
+.smalltitlegray{ color:Gray; font-size:12px;}
+.subtitleteal{ color:teal; font-size:17px; line-height:26px;}
+.dgnextprev a{ color:#73ad21; font-size:17px; line-height:26px; padding-right:30px;}
+
+
+/* CODE
+========================================================================*/
+.code{ font-weight:normal; background-color:#f1f1f1; font-size:15px; color: black; border:1px solid #969696; padding:10px 0 10px 10px; line-height: 23px;}
+
+/* IMG
+=========================================================*/
+img.img-responsive { width:100%; }
+
+/* comment
+========================================================================*/
+a.comment{ font-weight:bold; font-size:18px; color:#006699; line-height:40px; background:url(http://cdn.careerride.com/images/new/comment.png) 179px 5px no-repeat; display:block; width:50%}
+
+
+
+/* LOGIN-SEC
+========================================================================*/
+.loginsec{ margin:0px; padding:0px; width:100%; display:block; background:url(http://cdn.careerride.com/images/new/office-1.jpg) center 77px no-repeat 
+
+fixed;
+-webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+background-size:cover; min-height:797px; overflow:hidden;}
+
+.loginsec .loginsec-left{ margin:18% 0 0; padding:0; display:block;}
+.loginsec .loginsec-left h1{ color:#FFF;}
+
+.loginsec-left ul{ list-style-type:none; margin:0px; padding:0px;}    
+.loginsec-left ul li{ margin:0px 0px 10px; padding:0px; color:#FFF; font-size:16px; line-height:17px;}
+
+.loginsec .loginsec-left h5{ color:#FFF; text-align:left; margin-left:20px; line-height:30px}
+.loginbox{ margin:27% 0px 0px; padding:0px; width:360px;  min-height:480px; float:right; display:block; background:#FFF; box-shadow:0 0 5px #ccc;}
+.loginbox h3{ margin:0px 0px 30px 0px; text-align:center;}
+.loginbox h3 span{ font-weight:bold;}
+
+.loginbox-nav{ margin:0px 0px 35px; padding:20px 0px 0px 20px; border-bottom:1px solid #ddd;}
+.loginbox-nav ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px;}
+.loginbox-nav ul li{ margin:0px 30px 10px 0px; float:left;}
+.loginbox-nav ul li a{ padding:0 0 12px; font-size:20px; line-height:22px; color:#333; font-family:Calibri;}
+.loginbox-nav ul li a:hover{ color:#c20b0d; border-bottom:2px solid #c20b0d; text-decoration:none;}
+.loginbox-nav ul li a.active{ color:#c20b0d; border-bottom:2px solid #c20b0d; text-decoration:none;}
+
+.form-control{ margin:0px 0px 20px 20px; padding:0px; display:block;}
+.form-control input[type="text"]{ border-top:0px; border-right:0px; border-bottom:1px solid #ccc; border-left:0px; padding:6px 6px; width:308px;}
+.form-control input[type="password"]{ border-top:0px; border-right:0px; border-bottom:1px solid #ccc; border-left:0px; padding:6px 6px; width:308px;}
+.form-control input[type="text"]:focus, .form-control input[type="password"]:focus{ border-bottom:2px solid #14558c;}
+
+.error{ color:#c00;}
+
+.btn-sigin{ margin:0px 15px 0 0px; padding:5px 20px; font-size:14px; line-height:20px; color:#fff; font-weight:bold; text-align:center; border:0px; background:#73ad21; display:inline-block; box-shadow:0 0 5px #ccc;}
+.btn-sigin:hover{ background:#14558c; text-decoration:none;}
+
+.new_account{ margin:34.6% 0 0; padding:5% 0 20px 23%; background:#f5f5f5 url(http://cdn.careerride.com/images/new/new-member.png) 0px 10px no-repeat; border-top:1px solid #ddd; border-bottom:1px solid #ddd; box-shadow:0px 1px 0 #fff inset;}
+.new_account span{ color:black; font-size:20px;} 
+.new_account span .member{ font-weight:bold;} 
+.btn-signup{ margin:0px 0px 0px 10px; padding:10px 20px; font-size:14px; line-height:20px; color:#fff; font-weight:bold; text-align:center; border:0px; background:#73ad21; display:inline-block; box-shadow:0 0 5px #ccc;}
+.btn-signup:hover{ background:#14558c; text-decoration:none;}
+
+
+/* ASKQUEJOB
+========================================================================*/
+.askquejob{ margin:0px; padding:0px; float:left; display:block;}
+.askquejob ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px;}
+.askquejob ul li{ margin:0px 10px 0px 0px; float:left;}
+.askquejob ul li:nth-child(2){ margin:0px;}
+a.askque{ margin:0px; padding:5px 15px 5px 10px; color:#FFF; font-size:16px; line-height:16px; font-weight:bold; display:block; background:#f17421; border:0px; border-radius:0px 17px 0px 0px;}
+a:hover.askque{ text-decoration:none;}
+a.job{ margin:0px; padding:5px 15px 5px 10px; color:#FFF; font-size:16px; line-height:16px; font-weight:bold; display:block; background:#73ad21; border:0px; border-radius:0px 17px 0px 0px;}
+a:hover.job{ text-decoration:none;}
+
+
+/* RECRUITER-SEC
+========================================================================*/
+.recruitersec{ margin:0px; padding:0px; width:100%; display:block; background:url(http://cdn.careerride.com/images/new/recruiter-1.jpeg) center 77px 
+no-repeat fixed;
+-webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+background-size:cover; min-height:797px; overflow:hidden;}
+.recruitersec .recruitersec-left{ margin:18% 0 0; padding:0px; display:block;}
+.recruitersec .recruitersec-left h1{ color:#FFF;}
+
+.recruitersec-left ul{ list-style-type:none; margin:0px; padding:0px;}    
+.recruitersec-left ul li{ margin:0px 0px 10px; padding:0px; color:#FFF; font-size:16px; line-height:17px;}
+
+/* MYBUTTON AND NEWBTN
+========================================================================*/
+.newbtn{ margin:0px; padding:5px 20px; font-size:14px; line-height:18px; color:#fff; font-weight:bold; text-align:center; border:0px; background:#73ad21; display:inline-block; box-shadow:0 0 5px #ccc;}
+.newbtn:hover{ text-decoration:none; background:#14558c;}
+
+.newbtn1{margin:0;font-size:14px;line-height:18px;color:#fff;font-weight:700;text-align:center;border:0;background:#73ad21;display:inline-block;box-shadow:0 0 5px #ccc}
+.newbtn1:hover{text-decoration:none;}
+
+
+
+.myButton{ box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2);
+-moz-box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2);
+                -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+                background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+                background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+                background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+                background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+                background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+                background-color:#ffffff;
+                -moz-border-radius:6px;
+                -webkit-border-radius:6px;
+                border-radius:6px;
+                border:1px solid #dcdcdc;
+                display:inline-block;
+                cursor:pointer;
+                color:#666666;
+                font-family:Arial;
+                font-size:15px;
+                font-weight:bold;
+                padding:4px 18px;
+                margin:5px 0px 0px 0px;
+                text-decoration:none;
+}
+
+
+.myButton:hover{
+                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+                background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+                background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+                background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+                background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+                background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+                background-color:#f6f6f6;
+}
+
+.myButton:active{ position:relative; top:1px;}
+
+/* SELECTBOX
+========================================================================*/
+.selectbox{ width:98%; height:27px; background-color:#FFF; font: 400 12px/18px 'Open Sans' , sans-serif; color:#000; font-weight:normal; border:1px solid #ccc; margin: 5px 0 0 0; padding:5px;}
+
+/* HYPLINKBTN FOR PASSAGE
+========================================================================*/
+a.passagebtn{margin:10px 0px; padding:2px 10px; display:inline-block; border-radius:5px; color:#fff; font-weight:normal; font-size:13.5px; line-height:21px; background:#73ad21;}
+
+/* HYPLINKBTN FOR GENERAL
+========================================================================*/
+a.hyplinkbtn1{padding:2px 10px; display:inline-block; border-radius:5px; color:#fff; font-weight:normal; font-size:13.5px; line-height:21px; background:#73ad21;}
+
+/* HYPLINKBTN
+========================================================================*/
+a.hyplinkbtn{margin:10px 0px; padding:2px 5px; display:inline-block; border:1px solid #006699; color:black; font-weight:normal; font-size:13.5px; line-height:21px;}
+
+/* HYPLINKBTN2
+========================================================================*/
+a.hyplinkbtn2{margin:0px; padding:2px 5px; display:inline-block; border:1px solid #006699; color:black; font-weight:normal; font-size:13.5px; line-height:21px;}
+
+/* TOGGLE BUTTON
+========================================================================*/
+
+a.togglebtn{ margin:10px 0px; padding:2px 5px; display:inline-block; border:1px solid #006699; color:black; font-weight:normal; font-size:13.5px; line-height:21px;}
+
+#z1,#z2,#z3,#z4,#z5,#z6,#z7,#z8,#z9,#z10,#z11,#z12,#z13,#z14,#z15,#z16,#z17,#z18,#z19,#z20,#z21,#z22,#z23,#z24,#z25,#z26,#z27,#z28,#z29,#z30,#z31,#z32,#z33,#z34,#z35,#z36,#z37,#z38,#z39,#z40,#z41,#z42,#z43,#z44,#z45,#z46,#z47,#z48,#z49,#z50,#z51,#z52,#z53,#z54,#z55,#z56,#z57,#z58,#z59,#z60{ margin:-11px 0px 10px; padding:0px 10px; border:1px solid #006699; display:none;}
+#z1 p,#z2 p,#z3 p,#z4 p,#z5 p,#z6 p,#z7 p,#z8 p,#z9 p,#z10 p,#z11 p,#z12 p,#z13 p,#z14 p,#z15 p,#z16 p,#z17 p,#z18 p,#z19 p,#z20 p,#z21 p,#z22 p,#z23 p,#z24 p,#z25 p,#z26 p,#z27 p,#z28 p,#z29 p,#z30 p,#z31 p,#z32 p,#z33 p,#z34 p,#z35 p,#z36 p,#z37 p,#z38 p,#z39 p,#z40 p,#z41 p,#z42 p,#z43 p,#z44 p,#z45 p,#z46 p,#z47 p,#z48 p,#z49 p,#z50 p,#z51 p,#z52 p,#z53 p,#z54 p,#z55 p,#z56 p,#z57 p,#z58 p,#z59 p,#z60 p{ margin:10px 0px 0;}
+
+#y1,#y2,#y3,#y4,#y5,#y6,#y7,#y8,#y9,#y10,#y11,#y12,#y13,#y14,#y15,#y16,#y17,#y18,#y19,#y20,#y21,#y22,#y23,#y24,#y25,#y26,#y27,#y28,#y29,#y30,#y31,#y32,#y33,#y34,#y35,#y36,#y37,#y38,#y39,#y40,#y41,#y42,#y43,#y44,#y45,#y46,#y47,#y48,#y49,#y50,#y51,#y52,#y53,#y54,#y55,#y56,#y57,#y58,#y59,#y60{ margin:-11px 0px 10px; padding:0px 10px; border:1px solid #006699; display:none;}
+#y1 p,#y2 p,#y3 p,#y4 p,#y5 p,#y6 p,#y7 p,#y8 p,#y9 p,#y10 p,#y11 p,#y12 p,#y13 p,#y14 p,#y15 p,#y16 p,#y17 p,#y18 p,#y19 p,#y20 p,#y21 p,#y22 p,#y23 p,#y24 p,#y25 p,#y26 p,#y27 p,#y28 p,#y29 p,#y30 p,#y31 p,#y32 p,#y33 p,#y34 p,#y35 p,#y36 p,#y37 p,#y38 p,#y39 p,#y40 p,#y41 p,#y42 p,#y43 p,#y44 p,#y45 p,#y46 p,#y47 p,#y48 p,#y49 p,#y50 p,#y51 p,#y52 p,#y53 p,#y54 p,#y55 p,#y56 p,#y57 p,#y58 p,#y59 p,#y60 p{ margin:10px 0px 0;}
+
+
+
+/* SELECTED-BOX
+========================================================================*/
+.selected-box{ margin:10px 0px 0px; padding:0px; display:block; background:#f1f1f1;}
+.selected-box p{ padding:10px; font-weight:bold; color:maroon;}
+
+
+/* UL FORMAT - DISC,CIRCLE,SQUARE.
+========================================================================*/
+ul{ text-decoration:none; list-style-type:disc; margin:0px 3px 20px 6px; padding:0 0 0 10px; color:#000;} 
+ul li{ margin:0px; line-height:26px;}
+
+ul.disc{ list-style-type:disc;}    
+ul.circle{ list-style-type:circle;}    
+ul.square{ list-style-type:square;}    
+ul.resume{list-style-type:disc;}
+ul.tcontrol{ margin:0px; padding:0px; list-style-type:none; text-decoration:none;}
+ul.tcontrol li{ float:left; padding-right:5px;}
+
+ul.one-link-for-multiple-line{ list-style-type:none; text-decoration:none; margin:0px 0 10px 0; padding:0px;}
+ul.one-link-for-multiple-line li{ margin:0px;}
+ul.one-link-for-multiple-line li a{ padding:5px 0px 5px 10px; display:block; color:#000; font-size:0.9em; line-height:26px; border-bottom:0px;}
+ul.one-link-for-multiple-line li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+.loginmsg{ margin:0px; padding:0px; display:block; overflow:hidden;}
+.loginmsg ul{ float:right; margin:0px; padding:0px; list-style-type:none; text-decoration:none;}
+.loginmsg ul li{ float:left; padding-right:5px; font-size:13px;}
+.loginmsg ul li:nth-child(3){ padding:0px;}
+
+.loginmenu{ margin:0px 0px 15px; padding:0px; display:block;}
+.loginmenu ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px;}
+.loginmenu ul li{ float:left; margin:0 7px 7px 0;}
+.loginmenu ul li a{ padding:5px; color:#14558c; font-size:14px; line-height:16px; background:#E3FEAB; border-bottom:2px solid transparent; border:1px solid #B3FE41;}
+.loginmenu ul li a:hover{ text-decoration:none; border-bottom:2px solid #f17421;}
+
+
+.loginmenu1{ margin:0px 0px 15px; padding:40px 0 0; display:block; overflow:hidden;}
+.loginmenu1 ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px;}
+.loginmenu1 ul li{ float:left; margin:0px 5px 0px 0px;}
+.loginmenu1 ul li a{ margin:0px; padding:40px 18px 10px; color:#14558c; font-size:0.8em; line-height:16px; text-align:center; background:/*rgb(192,192,192)*/ url(http://cdn.careerride.com/images/new/user-menu-icon.png) no-repeat;}
+.loginmenu1 ul li a:hover{ text-decoration:none; background:rgb(220,220,220) url(http://cdn.careerride.com/images/new/user-menu-icon.png) no-repeat;}
+
+.loginmenu1 ul li a.home{ background-position:18px 5px;}
+.loginmenu1 ul li a.jobs{ background-position:-155px 5px;}
+.loginmenu1 ul li a.answer{ background-position:-316px 5px;}
+.loginmenu1 ul li a.analytics{ background-position:-478px 5px;}
+.loginmenu1 ul li a.profile{ background-position:-656px 5px;}
+.loginmenu1 ul li a.cv{ background-position:-838px 5px;}
+.loginmenu1 ul li a.quesans{ background-position:-1008px 5px;}
+.loginmenu1 ul li a.videos{ background-position:-1185px 5px;}
+.loginmenu1 ul li a.test{ background-position:27px -113px;}
+.loginmenu1 ul li a.notification{ background-position:-130px 6px;}
+
+/* RELATED-GROUP 
+========================================================================*/
+.relatedgr{ margin:10px 0px 0px; padding:10px 0 0 10px; display:block; background:#f1f1f1; overflow:hidden;}
+.relatedgr ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px;}
+.relatedgr ul li{ margin:0px 0 10px; padding:0 0 0 20px; width:44%; float:left; background:url(http://cdn.careerride.com/images/new/mark-red.png) 0 10px no-repeat;}
+.relatedgr ul li a{ margin:0px; padding:0px; color:#14558c; font-size:14px; line-height:16px;}
+.relatedgr ul li a:hover{ color:#73ad21;}
+
+/* LEFTCOLUMN-TOGGLE
+========================================================================*/
+button.leftcolumn-toggle{ display:none; float:left; margin:2px 7% 0 18%; width:45px; height:25px; background: url(http://cdn.careerride.com/images/new/button.png) no-repeat center #006699; border:0px;}
+
+/* SCROLL-TO-TOP
+========================================================================*/
+a.scroll-to-top{ background:#73ad21 none repeat scroll 0 0; border-radius:50%; bottom:10px; color:#fff; font-size:22px; line-height:36px; font-weight:bold; display:inline-block; height:40px; opacity:0.7;
+padding:0px;
+    position:fixed;
+    right:38px;
+    text-align:center;
+    text-decoration:none;
+    transition: all 0.3s ease 0s;
+    width:40px;
+    z-index:1040;
+}
+
+/* NAVSUB
+========================================================================*/
+a.navsub{ display:inline-block; position:relative; background:url(http://cdn.careerride.com/images/new/arrow-down.png) 49px 10px no-repeat; padding:5px 20px 5px 6px;}
+a:hover.navsub{ background:url(http://cdn.careerride.com/images/new/arrow-down-hover.png) 46px 10px no-repeat #73ad21;}
+.navsub-content{ margin:31px 0 0 10px; padding:0; width:99.8%; background:#f1f1f1 none repeat scroll 0 0; border:1px solid #ccc; box-shadow:0 0 5px #ccc; display:none; min-height:212px; overflow:hidden; position:absolute; z-index:1;}
+a.close{ background:#006699; border-radius:100px; color:#FFF; float:right; font-size:26px; line-height:31px; font-weight:bold; margin:10px 10px 0 0; padding:0px; text-align:center; width:30px; height:30px; text-decoration:none;}
+.navsub-content ul{ list-style-type:none; text-decoration:none; margin:0px; padding:10px 0 0 0;}
+.navsub-content ul li{ float:none;}
+.navsub-content ul li a{ font-weight:normal; border-radius:0px; padding:5px 0px 5px 10px;}
+
+/* PAGEDATA-1-COLUMN
+========================================================================*/
+.pagedata-1-column{ margin:auto; padding:0; width:98%; display:block;}
+.pagedata-1-column h1{ margin:0 0 10px 0; padding:4px 0 4px 10px; color: teal; background:#ccc; border-radius:5px 5px 0px 0px;}
+.pagedata-1-column h2{margin:10px 0 10px 0;font-size: 18px;line-height: 23px;border-bottom: 1px solid #ccc;padding-bottom:7px;}
+.pagedata-1-column ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px 0 0 10px; overflow:hidden;}
+.pagedata-1-column ul li{ float:left; width:93%; margin:0 10px 0 0px; padding:0 0 0 19px; background:url(http://cdn.careerride.com/images/new/folder-left-2.png) 0 8px no-repeat;}
+.pagedata-1-column ul li a{ margin:0px; padding:5px 0 5px 5px; display:block; color:#006699; font-size:14px; line-height:16px;}
+.pagedata-1-column ul li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+/* PAGEDATA-TWO-COLUMN
+========================================================================*/
+.pagedata-two-column{ margin:auto; padding:0; width:98%; display:block;}
+.pagedata-two-column h1{ margin:0 0 10px 0; padding:4px 0 4px 10px; color: teal; background:#ccc; border-radius:5px 5px 0px 0px;}
+.pagedata-two-column h2{margin:10px 0 10px 0;font-size: 18px;line-height: 23px;border-bottom: 1px solid #ccc;padding-bottom:7px;}
+.pagedata-two-column ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px 0 0 10px; overflow:hidden;}
+.pagedata-two-column ul li{ float:left; width:45%; margin:0 10px 0 0px; padding:0 0 0 19px; background:url(http://cdn.careerride.com/images/new/folder-left-2.png) 0 8px no-repeat;}
+.pagedata-two-column ul li a{ margin:0px; padding:5px 0 5px 5px; display:block; color:#006699; font-size:14px; line-height:16px;  width:98%;}
+.pagedata-two-column ul li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+
+/* PAGEDATA-ONE-COLUMN
+========================================================================*/
+.pagedata-one-column { margin:0; padding:0; width:100%; display:block;}
+.pagedata-one-column h1{ padding:0 0 7px 0; border-bottom:1px solid #ccc; text-align:left;}
+
+
+/* PAGEDATA THREE COLUMN
+========================================================================*/
+.pagedata-three-column{ margin:0; padding:0; width:98%; display:block;  overflow:hidden;}
+.pagedata-three-column h2{margin:10px 0 10px 0;font-size: 18px;line-height: 23px;border-bottom: 1px solid #ccc;padding-bottom:7px;}
+.pagedata-three-column h6{ margin:0px 0 5px 0; padding:4px 0px 4px 10px; color: teal; font-weight:bold; background:#ccc; border-radius:5px 5px 0px 0px;}
+.pagedata-three-column ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px 0 0 10px; overflow:hidden;}
+.pagedata-three-column ul li{ float:left; width:30%; margin:0 10px 0 0px; padding:0 0 0 19px; background:url(http://cdn.careerride.com/images/new/folder-left-2.png) 0 8px no-repeat;}
+.pagedata-three-column ul li a{ margin:0px; padding:5px 0 5px 5px; display:block; color:#006699; font-size:14px; line-height:16px;  width:98%;}
+.pagedata-three-column ul li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+
+/* PAGEDATA-FOUR-COLUMN
+========================================================================*/
+.pagedata-four-column{  margin:0; padding:0; width:98%; display:block; overflow:hidden;}
+.pagedata-four-column h2{margin:10px 0 10px 0;font-size: 18px;line-height: 23px;border-bottom: 1px solid #ccc;padding-bottom:7px;}
+.pagedata-four-column h6{ margin:0px 0 5px 0; padding:4px 0px 4px 10px; color:teal; font-weight:bold; background:#ccc; border-radius:5px 5px 0px 0px;}
+.pagedata-four-column ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px 0 0 10px; overflow:hidden;}
+.pagedata-four-column ul li{ float:left; width:22%; margin:0 10px 0 0px; padding:0 0 0 19px; background:url(http://cdn.careerride.com/images/new/folder-left-2.png) 0 8px no-repeat;}
+.pagedata-four-column ul li a{ margin:0px; padding:5px 0 5px 5px; display:block; color:#006699; font-size:14px; line-height:16px;  width:98%;}
+.pagedata-four-column ul li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+
+/* PAGEDATA FIVE COLUMN
+========================================================================*/
+.pagedata-five-column{ margin:0; padding:0; width:98%; display:block; overflow:hidden;}
+.pagedata-five-column h2{margin:10px 0 10px 0;font-size: 18px;line-height: 23px;border-bottom: 1px solid #ccc;padding-bottom:7px;}
+.pagedata-five-column h6{ margin:0px 0 5px 0; padding:4px 0px 4px 10px; color: teal; font-weight:bold; background:#ccc; border-radius:5px 5px 0px 0px;}
+.pagedata-five-column ul{ list-style-type:none; text-decoration:none; margin:0px; padding:0px 0 0 10px; overflow:hidden;}
+.pagedata-five-column ul li{ float:left; width:17%; margin:0 10px 0 0px; padding:0 0 0 19px; background:url(http://cdn.careerride.com/images/new/folder-left-2.png) 0 8px no-repeat;}
+.pagedata-five-column ul li a{ margin:0px; padding:5px 0 5px 5px; display:block; color:#006699; font-size:14px; line-height:16px; width:98%;}
+.pagedata-five-column ul li a:hover{ text-decoration:none; color:#ffffff; background:#73ad21;}
+
+
+/* REGISTERED MEMBER
+========================================================================*/
+
+.profile { margin:0px; padding:0px; width:100%; display:block;overflow:hidden;}
+.profile .profile-left{ display:block; margin:0px 4px 0px 0px;}
+.profile-left ul{ list-style-type:none; margin:0px; padding:0px;background-color:#F5FCF1;}
+.profile-left ul li{ margin:0px 0px 12px; padding:0px 10px; color:#666; font-size:15px; line-height:17px;}
+.profile-left h6{ margin:0px; color:teal; font-weight:bold; background:#f1f1f1; padding:4px 0px 4px 10px; border-radius:5px 5px 0px 0px;}
+
+.profile .profile-center{ display:block;margin-bottom:15px;}
+.profile .profile-center h6{ margin:0px 0px 8px 0px; color:teal; font-weight:bold; background:#f1f1f1; padding:4px 0px 4px 10px; border-radius:5px 5px 0px 0px;}
+.profile-center-info  ul{ list-style-type:none; margin:0px; padding:0px;}
+.profile-center-info ul li{ float:left; margin:0px 0px 10px; width:46%; padding:0px 10px; color:#666; font-size:15px; line-height:17px;}
+
+
+.candidate-info{width:100%;padding:0px;margin:0px 0 0 0 ;display:block;}
+.candidate-info:hover {box-shadow: 0 4px 6px 0 rgba(0,0,0,0.16),0 4px 12px 0 rgba(0,0,0,0.12)!important;}
+.candidate-info textarea{  width: 98%; padding:5px;margin:5px 0;  border:1px solid #ccc;}
+.candidate-info textarea:hover {border: 1px solid #006699;}
+.candidate-info textarea:focus {border: 1px solid #006699;}
+
+.candidate-details{width:100%;padding:0px;margin:0px;display:block;}
+.candidate-details ul{list-style-type:none;margin:0;padding:0;width:100%;overflow:hidden;}
+.candidate-details ul li{float:left;margin:0px;padding:0;color:#666;width:28%;}
+.candidate-img{float:left;margin:10px;}
+
+.hide-content {width:100%;display:block;padding:0px;margin:0;}
+.hide-info {display:block;width:100%;margin-left:5px;}
+.hide-info ul {list-style-type:none;margin:0;padding:0;width:100%;overflow:hidden;}
+.hide-info ul li {float:left;margin:0px;padding:0;color:#666;width:31%;}
+.hide-info:hover{cursor:default;}
+.info-img{float:left;margin:10px;padding:4px;}
+
+.registered-member-menu{margin:0;padding:0;width:97%;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
+.registered-member-menu ul{list-style-type:none;margin:0;padding:0;}
+.registered-member-menu ul li{ border-bottom:1px solid #dddce0;padding:10px 20px 10px 5px;margin:0;font-size: 13px; position:relative;color:#12538a;background-color:#f6f8f8;}
+.registered-member-menu ul li:hover{cursor:pointer;background-color: #f0f0f0;}
+.registered-member-menu img{margin-right:8px;}
+.notify {position: absolute;height: 20px;width: 20px;border-radius: 50%;background-color: #56abec;color: #fff;font-size: 11px;left: 13px;top: 3px;line-height: 21px;text-align:center;}
+
+.hide-content{display:none;width:100%;}
+
+#lblview{color:#14558c;cursor:pointer;}
+#lblview:hover {text-decoration:underline;}
+
+.gridView{display:block;width:100%;margin:0;padding:0}
+.gridView ul{display:block;width:100%;margin:0;padding:0}
+.gridView ul li{float:left;display:inline-block;width:25%;margin-bottom:2px;padding:0}	
+
+.form-background {display: block;width: 100%;margin: 0;padding: 0px;background-color:#f1f1f1;}
+
+.keyskills {width:100%;display:block;margin:0;padding:0;}
+.keyskills ul {width:100%;display:block;margin:0;padding:0;text-decoration:none;}
+.keyskills ul li {display:inline-block;margin-right: 2px; font-size: 13px; padding: 0px 12px;border: 1px solid #edeff0; background-color:#f1f1f1; border-radius: 15px; text-transform: capitalize; margin-bottom: 5px;width:auto;}
+.errorcontrol {background-color: #FBE3E4;border: solid 1px Red;}
+.validationmsg{color:Red;}
+
+.search-criteria {width:100%;background-color:#f6f8f8;padding:15px 0;text-align:left;display:block;overflow:hidden;}
+.search-criteria ul {list-style-type:none;margin:0;padding:0;display:block;width: 100%;text-align :center;}
+.search-criteria ul li {margin:0 0 4px 4px;padding:0;display:inline-block;}
+.search-criteria select { height:30px; width:100%; border:1px solid #ccc;}
+.search-criteria select:hover{ border:1px solid #006699;}
+.search-criteria input[type="text"]{ height:30px;  width: 250px; padding-left:3px; border:1px solid #ccc;}
+.search-criteria input[type="text"]:hover {border: 1px solid #006699;}
+.search-criteria input[type="text"]:focus {border: 1px solid #006699;}
+  
+.notification-msg { width: 100%; padding: 10px 0 10px 0; margin: 5px 0 5px 0; height: auto; display: block; color: #333; text-align: center; background-color:#f7e579; }
+.notification-msg a { color:#14558c;}
+
+/* FLUID-GRID-16
+========================================================================*/
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_16 { width: 98%; margin-left: 1%; margin-right: 1%;}
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14, .grid_15, .grid_16 { display:inline; float: left; position: relative;}
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha { margin-left: 0; }
+.omega { margin-right: 0; }
+/* Grid >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_16 .grid_1 { width:6.25%; }
+.container_16 .grid_2 { width:12.5%; }
+.container_16 .grid_3 { width:18.75%; }
+.container_16 .grid_4 { width:25.0%; }
+.container_16 .grid_5 { width:31.25%; }
+.container_16 .grid_6 { width:37.5%; }
+.container_16 .grid_7 { width:43.75%; }
+.container_16 .grid_8 { width:50.0%; }
+.container_16 .grid_9 { width:56.25%; }
+.container_16 .grid_10 { width:62.5%; }
+.container_16 .grid_11 { width:68.75%; }
+.container_16 .grid_12 { width:75.0%; }
+.container_16 .grid_13 { width:81.25%; }
+.container_16 .grid_14 { width:87.5%; }
+.container_16 .grid_15 { width:93.75%; }
+.container_16 .grid_16         { width:100%; }
+/* Prefix Extra Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_16 .prefix_1 { padding-left:6.25%; }
+.container_16 .prefix_2 { padding-left:12.5%; }
+.container_16 .prefix_3 { padding-left:18.75%; }
+.container_16 .prefix_4 { padding-left:25.0%; }
+.container_16 .prefix_5 { padding-left:31.25%; }
+.container_16 .prefix_6 { padding-left:37.5%; }
+.container_16 .prefix_7 { padding-left:43.75%; }
+.container_16 .prefix_8 { padding-left:50.0%; }
+.container_16 .prefix_9 { padding-left:56.25%; }
+.container_16 .prefix_10 { padding-left:62.5%; }
+.container_16 .prefix_11 { padding-left:68.75%; }
+.container_16 .prefix_12 { padding-left:75.0%; }
+.container_16 .prefix_13 { padding-left:81.25%; }
+.container_16 .prefix_14 { padding-left:87.5%; }
+.container_16 .prefix_15 { padding-left:93.75%; }
+/* Suffix Extra Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_16 .suffix_1 { padding-right:6.25%; }
+.container_16 .suffix_2 { padding-right:12.5%; }
+.container_16 .suffix_3 { padding-right:18.75%; }
+.container_16 .suffix_4 { padding-right:25.0%; }
+.container_16 .suffix_5 { padding-right:31.25%; }
+.container_16 .suffix_6 { padding-right:37.5%; }
+.container_16 .suffix_7 { padding-right:43.75%; }
+.container_16 .suffix_8 { padding-right:50.0%; }
+.container_16 .suffix_9 { padding-right:56.25%; }
+.container_16 .suffix_10 { padding-right:62.5%; }
+.container_16 .suffix_11 { padding-right:68.75%; }
+.container_16 .suffix_12 { padding-right:75.0%; }
+.container_16 .suffix_13 { padding-right:81.25%; }
+.container_16 .suffix_14 { padding-right:87.5%; }
+.container_16 .suffix_15 { padding-right:93.75%; }
+/* Push Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_16 .push_1 { left:6.25%; }
+.container_16 .push_2 { left:12.5%; }
+.container_16 .push_3 { left:18.75%; }
+.container_16 .push_4 { left:25.0%; }
+.container_16 .push_5 { left:31.25%; }
+.container_16 .push_6 { left:37.5%; }
+.container_16 .push_7 { left:43.75%; }
+.container_16 .push_8 { left:50.0%; }
+.container_16 .push_9 { left:56.25%; }
+.container_16 .push_10 { left:62.5%; }
+.container_16 .push_11 { left:68.75%; }
+.container_16 .push_12 { left:75.0%; }
+.container_16 .push_13 { left:81.25%; }
+.container_16 .push_14 { left:87.5%; }
+.container_16 .push_15 { left:93.75%; }
+/* Pull Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_16 .pull_1 { left:-6.25%; }
+.container_16 .pull_2 { left:-12.5%; }
+.container_16 .pull_3 { left:-18.75%; }
+.container_16 .pull_4 { left:-25.0%; }
+.container_16 .pull_5 { left:-31.25%; }
+.container_16 .pull_6 { left:-40%; }
+.container_16 .pull_7 { left:-43.75%; }
+.container_16 .pull_8 { left:-50.0%; }
+.container_16 .pull_9 { left:-56.25%; }
+.container_16 .pull_10 { left:-60%; }
+.container_16 .pull_11 { left:-68.75%; }
+.container_16 .pull_12 { left:-75.0%; }
+.container_16 .pull_13 { left:-81.25%; }
+.container_16 .pull_14 { left:-87.5%; }
+.container_16 .pull_15 { left:-93.75%; }
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* MEDIA
+========================================================================*/
+@media only screen and (max-width:1024px){ 
+nav ul li a{ padding:5px 10px;}
+.banner-index .banner-top {display :block;float:left;margin:110px 0 50px 0px; }
+.loginsec{ background: rgba(0, 0, 0, 0) url("http://cdn.careerride.com/images/new/office-1.jpg") no-repeat fixed center 114px / cover;}
+.loginsec .loginsec-left{ margin:27% 0 0;}
+.loginbox{ margin:40% auto 0;}
+.recruitersec{ background: rgba(0, 0, 0, 0) url("http://cdn.careerride.com/images/new/recruiter-1.jpeg") no-repeat fixed center 114px / cover;}
+.recruitersec .recruitersec-left{ margin:27% 0 0;}
+.ads-sec{ padding:130px 0 5px 0;}
+.middle-sec-1{ padding:117px 0 5px 0;}
+.middle-sec-2{ padding:117px 0 5px 0;}
+#z1{ margin:-11px 0px 10px; display:none;}
+table.tablecontrol td select{ width:55px;}
+.pagedata-two-column ul li{ width:44%;}
+.pagedata-four-column ul li { width:30%;}
+.pagedata-five-column ul li{ width:30%;}
+footer .footer-top-sec h3{ padding:10px 0px;}
+.img-responsive { max-width:90%; }
+.candidate-details ul li{width:29%;}
+.hide-info ul li {width:30%; }
+}
+
+@media only screen and (max-width:959px){    
+table.tablecontrol td select{ width:67px;}
+.loginsec{
+-webkit-background-size:100%;
+  -moz-background-size:100%;
+  -o-background-size:100%;
+background-size:100%;}
+.loginsec .loginsec-left{ margin:28% 0 0;}
+.loginbox{ margin:40% auto 0;}
+.recruitersec{
+-webkit-background-size:100%;
+  -moz-background-size:100%;
+  -o-background-size:100%;
+background-size:100%;}
+.recruitersec .recruitersec-left{ margin:28% 0 0;}
+footer .footer-top-sec ul{ width:95%;}
+footer .footer-top-sec ul li a{ border-bottom:1px dotted #5f5f5f;}
+.img-responsive { max-width:80%; }
+}
+
+@media only screen and (max-width:800px){
+.container_16 .grid_4{ width:30%;}    
+.container_16 .grid_8{ width:70%;}
+.container_16 .grid_3{ width:25%;}    
+.container_16 .grid_9{ width:75%;}
+.rightcolumnmarginleft{ margin:0 0 0 4px;}
+.container_16 .grid_12{ width:100%;}
+.pagedata-two-column ul li{ width:45%;}
+.pagedata-three-column ul li{ width:45%;}
+.pagedata-four-column ul li{ width:45%;}
+.pagedata-five-column ul li{ width:45%;}
+.social-icons{ display:none;}
+.loginsec{ min-height:564px;}
+.loginsec .loginsec-left{ margin:36% 0 0; width:90%;}
+.loginbox{ margin:51% auto 0; width:330px; min-height:390px;}
+.loginbox h3{ margin:0 0 20px;}
+.loginbox-nav{margin:0 0 25px;}
+.form-control input[type="text"]{ width:260px;}
+.form-control input[type="password"]{ width:260px;}
+.new_account{ margin:17% 0 0;}
+.recruitersec{ min-height:564px;}
+.recruitersec .recruitersec-left{ margin:36% 0 0; width:90%;}
+table.tablecontrol td:nth-child(1){ width:22%;}
+table.tablecontrol td input[type="text"]{ width:300px;}
+a.close{ display:none;}
+.rightcolumn a img{ display:none;}
+.rightcolumn-inner{ display:none;}
+.copyright{ margin:0 0 8%;}
+.img-responsive { max-width:90%; }
+.middle-sec-2{width:100%;}
+.ads-bottom ul li{width:100%;}
+}
+
+@media only screen and (max-width:768px){
+.loginsec{ min-height:546px;}
+.recruitersec{ min-height:546px;}
+}
+
+@media only screen and (max-width:652px) {
+.candidate-details ul li{width:100%;}
+.hide-info ul li {width:100%; }
+}
+
+@media only screen and (max-width:600px){
+.middle-sec-2{ padding:88px 0 5px;}
+.rightcolumn-inner-1{display:none;}
+.container_16 .grid_11{ width:100%;}
+.container_16 .grid_6{ width:100%;}    
+.logo{ margin:0 0 15px 0px; float:left;}
+.container_16 .grid_10{ width:100%;}
+.container_16 .grid_9{ width:100%;}
+button.leftcolumn-toggle{ display:block;}
+#cse-search-box{ display:none;}    
+nav{ margin:0px; padding:92px 0 0 0px; width:100%; display:none; z-index:1;}
+nav ul{ margin:0;}
+nav ul li{ float:none;}
+nav ul li a{ margin:0; padding:8px 10px; border-radius:0px; font-size:0.9em; line-height:18px; font-weight:normal; border-bottom:1px dotted #ccc;}
+nav ul li a:hover{  box-shadow:none;}
+.banner-index ul{width:45%;margin-top:165px; }
+.banner-index ul li select{width:60px; }
+.banner-index .banner-top{margin:80px 0 30px 0px; }
+
+a.navsub{ display:none;}
+.ads-sec{ padding:100px 0 5px;}
+.middle-sec-1{ padding:88px 0 5px;}
+.container_16 .grid_4{ width:100%;}
+.container_16 .grid_16{ width:100%;}
+.container_16 .grid_12{ width:100%;}
+.leftcolumn-inner{ display:none;}
+.container_16 .grid_8{ width:100%;}
+.jobs-left-menu{ display:none;}
+.jobs-left-menu-sec{ display:none;}
+.container_16 .grid_10{ width:100%;}
+.pagedata-two-column ul li{ width:100%;}
+.pagedata-three-column ul li{ width:100%;}
+.pagedata-four-column ul li{ width:100%;}
+.pagedata-five-column ul li{ width:100%;}
+.loginsec{ background:none; min-height:auto;}
+.loginsec .loginsec-left{ display:none;}
+.loginbox{ margin:15% 0 0; background:none; box-shadow:none; width:100%; height:303px;}
+.form-control{ margin:0 0 20px 0px;}
+.form-control input[type="text"]{ width:308px;}
+.form-control input[type="password"]{ width:308px;}
+.loginbox-nav{ margin:0 0 20px; padding:20px 0 0 0px;}
+.loginbox h3{ margin:0 0 10px;}
+.form-control{ margin:0 0 20px 0px;}
+.new_account{ margin:58px 0 0;  background:#f5f5f5 url("http://cdn.careerride.com/images/new/new-member.png") no-repeat scroll 0 13px;}
+.recruitersec{ background:none; min-height:auto;}
+.recruitersec .recruitersec-left{ display:none;}
+.rightcolumnmarginleft{ margin:0;}
+table.tablecontrol td:nth-child(1){ width:25%;}
+.pagetopcontainer ul li select{ width:147px;}
+footer .footer-top-sec ul{ margin:0px; width:100%;}
+footer .footer-top-sec ul li a{ padding:8px 0;}
+footer .footer-top-sec ul:nth-child(1){ margin:0px;}
+footer .footer-bottom-sec ul{ margin:15px auto; width:45%;}
+footer .footer-bottom-sec ul li:nth-child(1){ display:none;}
+footer .footer-bottom-sec ul li:nth-child(2){ display:none;}
+footer .footer-bottom-sec ul li:nth-child(3){ display:none;}
+footer .footer-bottom-sec ul li:nth-child(5){ display:none;}
+.copyright{ margin:0 0 20%; text-align:center;}
+a.scroll-to-top{ bottom:10%;}
+
+.padtop10{ padding-top:10px;}
+.martop{ margin-top:auto;}
+.img-responsive { max-width:70%; }
+.registered-member-menu ul li{font-size:0;}
+.gridView ul li {width: 100%;}
+.search-criteria ul li {float:left;}
+}
+
+@media only screen and (max-width:568px){
+.new_account{ margin:60px 0 0;}
+.pagetopcontainer ul li{ margin:0 6px 0 0;}
+.pagetopcontainer ul li select{ width:180px;}
+footer .footer-bottom-sec ul{ width:50%;}
+}
+
+@media only screen and (max-width:480px){
+.banner-index ul{width:48%;}
+button.leftcolumn-toggle{ margin:2px 6% 0 17%;}    
+.loginbox{ margin:18% 0 0; min-height:374px;}
+.loginbox-nav{ margin:0 0 20px;}
+.loginbox h3{ margin:0 0 10px;}
+.form-control{ margin:0 0 15px;}
+.pagedata-two-column h1{ margin:0 0 5px; font-size:22px; line-height:23px;}
+footer .footer-top-sec h3{ padding:10px 0 10px 4px;}
+footer .footer-bottom-sec ul{ width:60%;}
+.copyright{ margin:0 0 24%;}
+a.scroll-to-top{ right:26px; bottom:12%;}
+
+.martop{ margin-top:auto;}
+.img-responsive { max-width:65%; }
+}
+
+@media only screen and (max-width:360px){
+button.leftcolumn-toggle{ margin:2px 8% 0 1%;}        
+nav{ padding:96px 0 0;}
+.banner-index ul{width:60%;}
+.ads-sec{ padding:100px 0 5px;}
+.middle-sec h1{ font-size:22px; line-height:23px;}    
+.pagedata-inner h3{ font-size:18px; line-height:19px;}
+.pagedata-inner-1 h3{ font-size:18px; line-height:19px;}
+.pagetopcontainer ul li:nth-child(1){ float:none; text-align:center;}
+.pagetopcontainer ul li:nth-child(2){ margin:0 5px 0 14%;}
+table.tablecontrol td input[type="text"]{ width:245px;}
+.loginbox{ margin:27% 0 0; min-height:364px;}
+.new_account{ padding:5% 0 20px 10%; background:#f5f5f5;}
+.btn-sigin{ padding:5px 15px;}
+.btn-signup{ padding:7px 15px;}
+footer .footer-bottom-sec ul{ width:100%;}
+.copyright{ margin:0 0 26%; text-align:left;}
+
+.martop{ margin-top:auto;}
+.padtop10{ padding-top:10px;}
+.img-responsive { max-width:60%; }
+}
+
+@media only screen and (max-width:320px){
+button.leftcolumn-toggle{ margin:2px 7% 0 1%;}
+table.tablecontrol td input[type="text"]{ width:205px;}
+.loginbox{ margin:30% 0 0;}
+.form-control input[type="text"]{ width:96%;}
+.form-control input[type="password"]{ width:96%;}
+.copyright{ margin:0 0 27%;}
+a.scroll-to-top{ right:8px;}
+
+.martop{ margin-top:auto;}
+}
+
+

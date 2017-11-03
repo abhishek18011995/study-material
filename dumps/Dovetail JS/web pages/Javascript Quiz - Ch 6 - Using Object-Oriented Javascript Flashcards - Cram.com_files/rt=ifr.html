@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0784)http://bcp.crwdcntrl.net/5/ct=y/c=9234/rand=267902283/pv=y/genp=page%3AUsing/genp=page%3AOption/genp=page%3AMath/genp=page%3ACram/genp=page%3ADate/genp=cis130%3A21/genp=cis130%3A55/genp=cis130%3A18/genp=cis130%3A104/genp=cis130%3A109/genp=cis130%3A128/genp=cis130%3A110/genp=cis130%3A52/genp=cis130%3A122/genp=cis130%3A108/genp=cis130%3A126/genp=cis130%3A90/genp=cis130%3A85/genp=cis130%3A88/genp=cis130%3A120/genp=cis130%3A133/genp=cis130%3A22/genp=cis130%3A20/genp=cis130%3A17/genp=cis130%3A56/genp=cis130%3A54/genp=cis130%3A51/genp=cis130%3A84/genp=cis130%3A16/genp=cis130%3A87/genp=cis130%3A50/genp=cis130%3A19/genp=cis130%3A53/genp=event%3AGGE20-1/int=%23OpR%2371882%23cram%20%3A%20Total%20Site%20Traffic/int=%23OpR%2371883%23cram%20%3A%20Site%20Section%20%3A%20flashcards/rt=ifr -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color:transparent; width: 100%; text-align: center;">
+<div><script>
+function processTargusData(json)
+{
+   if (json != null) {
+       if (json.targus != null) {
+            u = "";
+            v = "map";
+            if (json.targus.sk != null && json.targus.sk != "") {
+                u += "/tp=TARG/tpid=" + json.targus.sk;
+            }
+            if (json.targus.age != null && json.targus.age != "") {
+                u += "/genp=" + (new Date().getFullYear() - json.targus.age);
+                v = "5";
+            }
+            if (json.targus.gender != null && json.targus.gender != "") {
+                u += "/genp=gender%20-%20" + json.targus.gender;
+                v = "5";
+            }
+            if (u != "") {
+              var img = new Image();
+              img.src = "http://bcp.crwdcntrl.net/" + v + "/c=368" + u;
+              document.body.appendChild(img);
+            }
+        }
+   }
+}
+</script>
+<script src="./g.json"></script><img src="./usermatch.gif" width="1" height="1"><img src="./382416.gif" width="1" height="1"><img src="./usync" height="1" width="1"><img src="./getdata.xgi" height="1" width="1"><img src="./ibs-dpid=121998&amp;dpuuid=2e5cb6a89b5d7a71df251daa5a320937&amp;redir=http-%2F%2Fbcp..net%2Fmap%2Fc=9828%2Ftp=ADBE%2Ftpid=${DD_UUID}" width="1" height="1"><img src="./5907" width="1" height="1"></div>
+
+</body></html>

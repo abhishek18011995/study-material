@@ -1,0 +1,21 @@
+json full form
+
+advantages of ajax(all of
+these)
+
+javascript`s id get element by id is faster than jqyery id?
+(true/false)true
+
+what are jquery`s selectors?
+xpath
+css selector
+all of these
+---
+
+how many time  netscape navigator can traverse in dom the parent element?
+1
+2
+0
+3
+
+event.stop propagation ?

@@ -1,0 +1,419 @@
+Hi All,
+
+FYI
+Dovetail 3rd exit material
+
+1.	Which of the following are browser-side frameworks used in AJAX development?
+Ans:       DOJO Toolkit
+                Moo Tools
+
+2.	What is the default duration of AJAX Request?
+Ans:       0 seconds
+
+3.	What are all the technologies used by Ajax?
+Ans: All the above
+
+4.	What property is used to check whether AJAX request has been completed?
+Ans:       Ready state
+
+5.	Is Ajax said to be a 
+I)	technology platform
+II)	architectural platform
+Ans:       both I and II
+
+6.	Which method can be called top cancel the XMLHttpRequest in Ajax?
+Ans:       abort()
+
+7.	The ng-app directive lets you tell Angular which part of your page it should expect to manage.
+8.	The ng-repeat directive creates a copy of the set of elements.
+9.	Ng-show will show it’s elements when its expression is true. True
+10.	Object passed to controllers in mechanism we use to expose model data to views. $scope
+11.	Which method is called when a new instance of a mode is created in backbone js?
+Ans: initialize()
+12.	Backbone supports model validation by using which method?
+Ans: Model.validate()
+13.	Which method retrieves a default set of models from the server in the form of a JSON array?
+Ans: Collections.fetch()
+14.	Which function is called every time Backbone tries to read or save models to the server?
+Ans: Backbone.sync()
+15.	Which template engine does backbone use by default?
+Ans: underscore.js
+16.	Backbone manage application state and for connecting URLs to application event using?
+Ans: Backbone.routers()
+17.	_________ update the view when the model changes and updates the model when the user manipulates the view.
+Ans: Model
+18.	A views which function can be bound to a models change() event, allowing the view to always be up to date without requiring full page refresh.
+Ans: render
+19.	What is el and $el?
+Ans:       el -> reference to HTML DOM element
+                $el -> reference to jQuery element
+20.	What to do when the dojo components do not build up in the page after load?
+dojo.parser.parse()
+parser.parse()
+21.	What among the following ways can be used to bind an event with a dom element using dojo?
+On(target,event,onEvent)
+target.event(onEvent)
+22.	Which module can be used to emit some event?
+a)	On.emit() b) emit() c) Both d) None
+23.	Can we write JS which includes dojo modules without using require? TRUE
+24.	What is the variable used for dojo configuration? dojoConfig
+25.	How to programmatically parse a dojo dom element or whole webpage? dojo/parser
+26.	Which is not a property of dojo config?
+a)	isAsync b) has c) parseOnLoad d) foo
+27.	Which attribute of dojo ajax (XHR) handles error? error
+28.	What is the method used to unbind an event? disconnect()
+29.	Which parameter in dojo grid defines the layout of the grid? structure
+30.	Which utility class is used for creating UI templates that can be applied on data?
+Ans: Ext.Xtemplate
+
+31.	What class is used to fetch data from a data source?
+Ans: Ext.data.proxy.Proxy
+
+32.	Which of the following are layout managers existing in ext js?
+Ans: All of the above
+
+33.	How to stop editing a record?
+Ans: newRecord.endEdit();
+
+34.	What are major web browsers supported by ext js?
+Ans: All the above
+
+35.	What we call a tiny piece or component of functionality in ext?
+Ans: widget
+
+36.	How to find no of records in a store?
+Ans: store.getCount()
+
+37.	How to handle the updates for store changes?
+Ans: store.commitChanges()
+
+38.	What is Xtype?
+Ans: Symbolic name of ext components
+
+39.	How to hide the column in grid panel?
+Ans: hidden:true
+40.	Which utility class is used for creating UI templates that can be applied on data?
+Ans: Ext.Xtemplate
+
+41.	What class is used to fetch data from a data source?
+Ans: Ext.data.proxy.Proxy
+
+42.	Which of the following are layout managers existing in ext js?
+Ans: All of the above
+
+43.	How to stop editing a record?
+Ans: newRecord.endEdit();
+
+44.	What are major web browsers supported by ext js?
+Ans: All the above
+
+45.	What we call a tiny piece or component of functionality in ext?
+Ans: widget
+
+46.	How to find no of records in a store?
+Ans: store.getCount()
+
+47.	How to handle the updates for store changes?
+Ans: store.commitChanges()
+
+48.	What is Xtype?
+Ans: Symbolic name of ext components
+
+49.	How to hide the column in grid panel?
+Ans: hidden:true
+50.	What are the fastest selectors in jQuery?
+Ans:       Id
+                Element
+
+51.	Why do we use jQuery?
+Ans:       All the above
+
+52.	Function function1()
+{
+Alert(argument.length);
+}
+                Which of the following is true when a run function
+                Ans:       the alert box displays 0
+53.	We can have multiple document.ready() on the same page?
+Ans:       True
+
+54.	What are the slow selectors in jQuery?
+Ans:       Class
+
+55.	Which method returns the element as a jQuery object?
+Ans: eq()
+
+56.	Which method is useful when removed elements are to be reinserted into the dom at later time?
+Ans:       .detach()
+57.	Which of these platforms does not support  sencha touch?
+Ans: Symbian
+
+58.	Syntax for creating new sencha touch app with sencha command?
+Ans: Sencha generate app appname pathto
+
+59.	Arrange the following in correct launch process of sencha touch app
+Ans: 1,4,2,3
+
+60.	Class that sencha touch controller extend
+Ans: Ext.app.controller
+
+61.	Which of the following is not the key to controller configure object?
+Ans: Controller
+
+62.	Different device apis available in sencha touch
+Ans:       Orientation
+                Connection 
+                Vibration
+
+63.	Which of the following is not a predefined xtype in ST?
+Ans: accordion
+
+64.	Which of the following does not hold true for components in ST?
+Ans: It can control the entire app
+
+65.	Layouts available in sencha touch
+Ans:       Card
+                Fit
+                Hbox
+
+66.	Keywords that listen to events in ST?
+Ans: Listeners
+
+67.	Class used to create form panel in ST?
+Ans: Ext.form.Panel
+
+68.	ST is case sensitive?
+Ans: true
+69.	How can AJAX applications be debugged?
+Ans: Both
+
+70.	AJAX technology can work on web servers other than IIS 
+Ans:       True
+
+71.	What are the components of ASP.NET AJAX Server extensions framework?
+Ans:       all the above
+
+72.	What are some common AJAX framework, apart from the ASP.Net
+Ans:       All the above
+
+
+73.	How to pass parameters to the server?
+Ans:       both
+
+74.	What is the alternate way of achieving AJAX functionality without using an XMLHttpRequest object?
+Ans:       all the above
+
+75.	Which method is required to send a request to server?
+Ans:       open(), send()
+
+76.	Object.open(post, url, true)
+Ans:       True
+77.	To include or remove HTML element from DOM tree based on {{expression}}? Ng-if directive
+78.	What is ng-cloak used for? It is an alternative for the ng-bind directive
+79.	Directive that inserts results of expression to HTML template? Interpolation
+80.	Module is a collection of –
+a)	Directives  b)Services  c)     d)All of the above
+81.	Two objects are equal. Angular.equals
+82.	To evaluate an expression when user changes the input. Ng-eval
+83.	HTML specification does not require browser. ngSelect
+84.	Allows you to correct CSS style. ngStyle
+85.	Not to compile/bind contents of current DOM elements. ngNonBindable
+86.	How does backbone js help?
+Ans: both
+Incredibly small lib for the functions it provides
+Essentially MVC, making the code modular
+87.	To save application state to the url at a particular point you can use
+Ans:  navigate()
+ 
+88.	Apps developed using Backbone js?
+Ans: All of the above(bittorrentz, wordpress, linkedin)
+89.	Why do we need backbone js?
+Ans: All of the above
+90.	What is the use of Collection.fetch()?
+Ans: Fetches the default set of models for this collection from the server
+91.	Var collection = new Backbone.collection([
+{name:”tim”, age: 5};])
+                What does stringify do?
+                Ans: [{ “name” : “Jim”,
+                                “age” : 5}]
+                Adds quotes.
+92.	What is the use of toJSON method of collection?
+Ans:  Return an array containing the attributes hash of each mode(via toJSON) in the collection
+93.	_________ provides methods for routing client-side pages
+Ans:  Backbone.router
+94.	Backbone.sync = function(method, model){alert(method+”:”+model.url);}
+Var account = new backbone.copllection;
+Accounts.url = “accout”;
+Accounts.fetch();
+Ans: read:\accounts
+95.	Collection.reset is useful to? Reset all models in that collection
+96.	Returns the relative url. Model.url()
+97.	Method used to break the condition on some iteration? some()
+98.	Which attribute defines header in a popup? title
+99.	Which is not a theme of dojo? seriya
+100.	To which element of your page do you set dijit theme class? body
+101.	The type of button that maintains on/off state? digit/form/toggleButton
+102.	Which textbox in dijit includes a popup time picker? digit/form/timeTextBox
+103.	Which textarea module dynamically increases or decreases its height based on the content in it?digit/form/TextArea
+104.	A textbox which takes only number input? digit/form/NumbertextBox
+105.	Method used to modify the html content of an element? .innerHTML
+106.	Method used to load a JS module from the appropriate url? dojo.require()
+107.	Method used to return a JSON serialization of an object? dojo.toJSON()
+108.	Method used to clear the contents of a DOM? dojo.empty()
+109.	Method used to destroy a DOM element? dojo.destroy()
+110.	Which is knows as Swiss Army Knife mode of dom manipulation in dojo? dojo.query()
+111.	Which method is used to implement browser back button functionally? dojo.back()
+112.	Which method is used to implement drag and drop features? dojo.dnd()
+113.	Which method is used call functions after the DOM has finished loading and widgets declared in markup have been instantitated? dojo.ready()
+114.	Which module is used to retrieve a collection of key constraints? dojo.keys()
+115.	Which method is used to bind events to a list of elements? NodeList.connect()
+116.	Package that contains the class for textbox, checkbox
+Ans: Ext.form.field
+
+117.	Function used to wire up a function called after DOM tree is loaded and dependent files are loaded
+Ans: onReady()
+
+118.	Method used to navigate to the ancestors of the component that matches the expression passed on an argument
+Ans: up
+
+119.	How to get record object from store?
+Ans: var record = grid.getStore().getAt(row,index);
+
+120.	Special type of components that can contain other components
+Ans: container
+
+121.	Which encapsulates a client side cache of modal objects?
+Ans: store
+
+122.	Which of the following is not client side proxy?
+Ans: Ajax.proxy
+
+123.	Template can be defined by using__________
+Ans: Ext.Xtemplate
+
+124.	Which are state aware components?
+Ans: All the above
+
+125.	Which is the root class for all the classes with ext.define?
+Ans: Ext.base
+
+126.	Which is responsible for dynamic dependencies loading?
+Ans: Ext.requires
+
+127.	What is the preferred method for creating class object?
+Ans: Ext.create(‘className’)
+
+128.	Refs in controller is________
+Ans: Reference to the UI component
+
+129.	Which generates controller using sencha cmd?
+Ans: Sencha generate controller myController
+
+130.	How to define a new class in ext js4?
+Ans: Ext.define
+
+131.	Which state is bundled with EXTjs 4?
+Ans: cookie provider
+
+132.	Which base for all ext component?
+Ans: Ext.component
+
+133.	Which configuration is used for create, read, update and delete operations in server proxy?
+Ans: api
+
+134.	How to transfer data from model to form?
+Ans: Ext.form.Panel.loadRecord()
+
+135.	Which is a wrapper for Dom?
+Ans: Ext.dom.Element
+
+136.	Which module has children(), parent() functions
+Ans: NodeList-Traverse
+                Node-Traverser
+                Both
+                none
+137.	Which of the following elements can you attach jQuery events to?
+Ans:       none
+
+138.	$.grep(array1, function1);
+The above states __________ the elements of array1 array
+
+Ans:       filters
+
+139.	Consider the following:
+<ul id=”id1”>
+                <li id=”li1”> Items1 </li>
+<li id=”li2”> Items2 </li>
+<li id=”li3”> Items3 </li>
+<li id=”li4”> Items4 </li>
+</ul>
+Which of the following returns the same result as $(‘#id1 li’).not($(‘#li2’));?
+Ans:       $(‘#li2’).siblings();
+
+140.	jQuery defines foucusin and focusout which are cross browser focus and blur events?
+Ans:       True
+
+
+
+141.	jQuery .holdReady(false);
+This function is helpful when we want to load any jQuery plugins the execution of ready event
+Ans:       True
+142.	Data types available in ST
+Ans:       Boolean 
+                String
+                Number
+
+143.	Which event will fire on device orientation change?
+Ans: orientationchange
+
+144.	Sencha touch supports ajax?
+Ans:       True
+
+145.	Which of the following is not config option of Ext.data.Model object?
+Ans: store
+
+146.	Sencha touch 2.3 supports XHR?
+Ans:       True
+
+147.	Data Integration models available in Sencha Touch?
+Ans:       Ajax
+                JSONP
+                YQL
+
+148.	How to implement radio input field in Sencha Touch?
+Ans: {xtype : ‘radiofield’,
+                Name : ‘color’,
+                Value : ‘green’,
+                Label : ‘green’}
+
+149.	How to implement slider input field in Sencha Touch?
+Ans:Ext.create(‘Ext.form.Panel’,
+                {fullscreen : true,
+                Items: [
+                {
+                                Xtype : ‘sliderfield’,
+                                Label : ‘percentage’,
+                                Value : 50,
+                                minValue : 0,
+                                maxValue : 100
+                }
+}
+
+
+150.	Property used to style html inside content target of component
+Ans:       styleHtmlContent: true
+
+151.	Syntax to display prompt box
+Ans:       Ext.Msg.prompt(‘Name’, ‘please enter your name:’,
+                                Function(text){
+                                                //process text value and close…
+                                });
+
+
+Thanks & Regards,
+Sachin Joshi
+Programmer Analyst Trainee
+Ph:  +91-954-837-6311
+Vnet: 305753              
+ 
+
