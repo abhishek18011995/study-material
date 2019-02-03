@@ -1,0 +1,50 @@
+How do you define a wildcard state?
+
+Async Pipe : {{ obj_expression | async }}
+The async pipe subscribes to an Observable or Promise and returns the latest value it has emitted. When a new value is emitted, the async pipe marks the component to be checked for changes. When the component gets destroyed, the async pipe unsubscribes automatically to avoid potential memory leaks.
+
+https://toddmotto.com/angular-ngif-async-pipe
+How would you control size of an element on resize of the window in a component?
+
+NgZone:  (https://www.code-sample.com/2017/06/ngzone-service-run-outside-angular-2.html)
+The most common use of this service is to optimize performance when starting a work consisting of one or more asynchronous tasks that don't require UI updates or error handling to be handled by Angular. Such tasks can be kicked off via runOutsideAngular and if needed, these tasks can reenter the Angular zone via run.
+
+https://stackoverflow.com/questions/47939240/how-to-use-createembeddedview-method-of-templateref-in-angular4?rq=1
+
+How can you add an active class to a selected element in a list component?
+
+Interpolation is a special syntax that Angular converts into property binding. It’s a convenient alternative to property binding.
+
+what is the difference between ng-content, ng-container and ng- template?
+
+ <ng-content></ng-content> : 
+ If we add the tag <ng-content></ng-content> anywhere in our template HTML for our component. The inner content of the tags that define our component are then projected into this space.
+ 
+ <ng-container></ng-container>: Group sibling elements with <ng-container> (https://angular.io/guide/structural-directives#ngcontainer)
+  The grouping element may break the template appearance because CSS styles neither expect nor accommodate the new layout. 
+ Another problem: some HTML elements require all immediate children to be of a specific type. For example, the <select> element requires <option> children. You can't wrap the options in a conditional <div> or a <span>
+ <ng-container> to the rescue : The Angular <ng-container> is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+ 
+ <ng-template> : The asterisk is "syntactic sugar" for something a bit more complicated. Internally, Angular translates the *ngIf attribute into a <ng-template> element, wrapped around the host element, like this.
+ <div *ngIf="hero" class="name">{{hero.name}}</div>
+ 
+ transforms to 
+ 
+ <ng-template [ngIf]="hero">
+  <div class="name">{{hero.name}}</div>
+</ng-template>
+
+The *ngIf directive moved to the <ng-template> element where it became a property binding,[ngIf]. The rest of the <div>, including its class attribute, moved inside the <ng-template> element. The NgFor and NgSwitch... directives follow the same pattern.
+
+
+How do components communicate with each other?
+https://medium.com/@mirokoczka/3-ways-to-communicate-between-angular-components-a1e3f3304ecb (consider last two)
+
+
+Lean component: A lean component is a component which solely purpose is to display data to user. This means such component delegates data fetching, bussiness logic, input validation etc. to other classes like models, services, redux effects/actions etc. Lean component follows single responsibility principle.
+
+What is the difference between a module's forRoot() and forChild() methods and why do you need it?
+
+
+What would you have in a shared module?
+Creating shared modules allows you to organize and streamline your code. You can put commonly used directives, pipes, and components into one module and then import just that module wherever you need it in other parts of your app.
