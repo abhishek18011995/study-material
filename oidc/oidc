@@ -1,0 +1,57 @@
+--------------------angular doubts--------------------------------------
+- how to send access token in the api request 
+- how server side will validate it
+- what is refresh token 
+token_expires
+token_error
+
+------------------------OAuth---------------------
+Auth0
+- client secret: 
+Eu0BIhkWNylfLcqvEPF42ZI6aDDae4r3
+- client id: 
+GwdF1-ft0ap-hRsTWJUiVTSNTTMubruQhy3m6JCP6jV6Jhfrqg1OLLXO_i-12dRL
+
+------------------------Azure---------------------
+AzureAD SPA
+
+client secret: 
+
+
+client id: 
+bf0472af-3e91-4a31-993f-5aed0cab83d1
+
+tenanat id:
+147a2b71-5ce9-4933-94c4-2054328de565
+---------------------
+
+Name: 
+InfoAppAPI
+
+ClientId/ApplicationId:
+c8b7fa4c-afe3-473f-9247-b4ebd27dcf6a
+
+TenantId:
+147a2b71-5ce9-4933-94c4-2054328de565
+
+
+
+
+
+--------------------------------------------------
+
+- how to maintain session in server side
+- where we are storing temporary data
+- how to remove the cors problem in production 
+
+- expose an api
+- add platform
+- graph api
+
+https://login.microsoftonline.com/147a2b71-5ce9-4933-94c4-2054328de565/oauth2/v2.0/token
+grant_type: authorization_code
+code: 0.ASgAcSt6FOlcM0mUxCBUMo3lZZ5Be8HDbC9FsbIjDK4byz8oAAc.AQABAAIAAAAm-06blBE1TpVMil8KPQ41pbnB-ialxVX3VDtYK2kFR4CUfjC_6iyDpTXmfoy91ymbObVeQGuSjWURtM2lj5xhB5-3AWVxJIsXXrYcMU5gdrBVIsn0dRxQ-ZKXf_ozDdu-upcMrZBDh8HHsXxehCO4_S7HnKak4kV0w4caRucociEKj1RICobKuJZVcWVV4fJQGYsuwtQaPoPfps4gqIaN4bFpTKV9VgCkica9fcN5RhlP2GJ-dcxWjZRufuiN5xg65QiiDCpAwZ3XeSv45VPWVO7WSPbnBiJhVbRh9bNVVrH-ZKiFAMCbMbu6caxvxsk-GUPVq2WObqC8jVS5lOxjYiE3YxyfOnbpkSJmJCmg9pnbXHZ06JV2gpgQT7UkQzHlLhgwhcgXNuYgeLaORljZZU4RDBZbtZUBkrRWs2gBDY6v4I6tBuF2DHFzDmZaseYwjG875SYXPt6pe1wWOuol74kG68GcnnL5AfEFKZO1UAh6Vc826diGl6UaPpoAGq81PgY6kbmm22m8CXGF_8UVOe-o--pqmvkKZLo62GCrasdKYNtea0vkK_TIZfOCAIUS24VtOo56X8-GO8igX3XIrrS8ofRJLGYv3Fx4dWMnflN6Y-8GxRQ-h1cbBr3R8GbTQr3tANDxP7gjbOjyz__j3Racu2T20K0K1sIm2TIIm8BYCy_oYI-scjpR10okUq7jDRngqnMtzwInMltBUs4KFMPY0RvKLwu33DiTR8m1zj4wqcmXOWjEvfiPNpFZy5eAlyk55LUbu5fOLckGKWi9t6UcYIzwcDFS6v4y5b75_WCaqLxf4CKY7YuZ8F9U5mEgAA
+redirect_uri: https://localhost:44366/home
+code_verifier: Uzh1a0tRZXp0ZUROYVZyMmdTQk1uaGx6VUhoM1pGSi44Vl9lQ1YwUU83bnZQ
+client_id: c17b419e-6cc3-452f-b1b2-230cae1bcb3f
+client_secret: 0Yc490n/Fg-sQOkNYWNqy-w?Ir[q6Lv8
