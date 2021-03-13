@@ -1,0 +1,20 @@
+Set username & Password
+git config --global user.name "Your Name"
+git config --global user.email "your.email@your-place.com"
+
+
+git config --global core.editor "notepad++ multiInst -nosession"
+
+Test git configuration
+git config --global -e
+
+Configure P4Merge as Diff Tool in Git:
+git config --global diff.tool p4merge
+git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global difftool.prompt false
+
+Configure P4Merge as Merge Tool in Git:
+git config --global merge.tool p4merge
+git config --global mergetool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global mergetool.prompt false
+
