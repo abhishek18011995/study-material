@@ -1,3 +1,26 @@
+FORK:
+A GitHub fork is a copy of a repository (repo) that sits in your account rather than the account from which you forked the data from. Once you have forked a repo, you own your forked copy. This means that you can edit the contents of your forked repository without impacting the parent repo.
+
+Challenge:
+Login to your GitHub account.
+Navigate to the earthLab/14ers-git/` repo.
+Use the fork button to create your a fork of the 14ers-git repo in your account.
+
+----------------------------------------------------------------------------------
+
+Merge vs Rebase:
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+
+Short Version
+Merge takes all the changes in one branch and merges them into another branch in one commit.
+Rebase says I want the point at which I branched to move to a new starting point
+So when do you use either one?
+
+Merge
+Let's say you have created a branch for the purpose of developing a single feature. When you want to bring those changes back to master, you probably want merge (you don't care about maintaining all of the interim commits).
+Rebase
+A second scenario would be if you started doing some development and then another developer made an unrelated change. You probably want to pull and then rebase to base your changes from the current version from the repository.
+----------------------------------------------------------------------------------
 Set username & Password
 git config --global user.name "Your Name"
 git config --global user.email "your.email@your-place.com"

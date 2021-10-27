@@ -1,0 +1,95 @@
+Tech skills:
+-Why did you apply? What is ideal role? See yourself in 3 years? Preferred working environment?
+
+-What is your role in that project? How would team mates describe you? What are some things you would like to change (technically)?
+
+
+-What do you think constitutes to good quality code? 
+-What are your favourite ES2015+ Features?
+-What JavaScript Frameworks have you used? What benefits do Frameworks bring?
+-What are the biggest problems you have faced with CSS / SCSS?
+-What Pipeline tools you have used?
+-What different types of testing are there?
+
+-Keeping up to date? Favourite things in current/future technology? Any opensource development? Any other languages?
+ 
+ 
+-What do you think constitutes good quality code?
+ 
+-What are your favourite ES6+ features and why?
+-What JavaScript frameworks have you used? What benefits do frameworks bring?
+-How do you write a website with high performance as a primary goal?
+-What are the biggest problems you have faced with CSS / SCSS?
+-How do you prefer to do layout in CSS?
+-Have you used a CSS preprocessor? What are the benefits? 
+
+-What different types of testing are there?
+-Can you tell me what web accessibility means to you?
+-What accessibility tools have you used in the past?
+-Can you tell me a time when you've found a bug in your production code.
+-Have you learned something new or interesting recently?
+-Name the building blocks in Angular
+-What is transpiling?
+-Name some differences between AngularJS and Angular 2+
+-What is the difference between observables and promises?
+-What does accessibility mean to you?
+--What does the *symbolize in structural directives?
+-What is the sequence of Angular Lifecycle Hooks?
+-Explain Change Detection Mechanism in Angular along with types.
+-What are auth-guards?
+-What are the types of compilations available in Angular?
+-What is a Subject?
+
+
+
+Softskills:
+
+-Tell us about your current role, your team (size and shape) and recent experience including current challenges
+
+-Give me an example of a time when you were faced with a complex project related matter and you could not decide on the best way to deal with. What did you do? How did you go about making the decision – lead me through your decision process? If you could make the decision once again, would you change anything
+
+-Tell me about a time when you had to work with a difficult person to accomplish a goal. What was the biggest challenge? How did you handle it?
+
+-Describe a situation when you did much more than it was expected from you to get the project done. Were your efforts recognized? By whom and how? How did that make you feel?
+
+-Tell me about a time you had to work on several projects at once. How did you handle this?
+
+-Most teams at Maersk are distributed, how would you ensure that you all still operate as one team?
+
+-Looking back at your last project that you worked on, if there was one thing that you could change what would that be and why?
+
+-For technical staff - how do you stay up to-date with the latest technology trends?
+
+-What annoys you most about working with other people? or What annoys other people most about working with you? (or both)
+
+-During Covid we are having to work remotely, afterwards we will still need to work across a globally distributed organisation - 
+
+     
+
+-What are your favorite and least favorite things about working remotely (or globally distributed teams)? 
+
+-What prioritizing/time-management strategies do you typically adopt during your working day? 
+
+-If a new task hits them during the day how do they manage this?
+
+-Describe the last misunderstanding you had with a coworker and how you handled it.
+
+
+
+Agile Questions:
+
+-Tell me what agile means to you? What do people mean by agile?                                                                                              
+-Describe your current agile framework (process)?                                                                                                                                                              
+-What is the purpose of a daily stand-up?
+-Who is responsible for quality in your development / delivery / scrum team?
+-Who provides the estimates in your development / delivery / scrum team?
+-What units are used for estimates in an agile team?
+-For senior developers - can you explain what is meant by velocity? If they can how is it used?
+-Can you describe any agile technical practices?
+-What are the benefits of a 'Definition of Done' within an agile team?
+-What's the purpose a sprint retrospective?
+-Describe a time a team member was struggling and you proactively reached out to help? 
+-A bug crops up in a mission-critical application. Describe how you would diagnose and resolve the issue ?
+-Tell me about a time you developed a feature for a user and, once delivered, it wasn’t what they wanted. Where was the disconnect, and what did you learn from this experience?
+-Situation - “You get a call from your project manager/L1 Support Team at 6 a.m. saying your web application is having intermittent access problems by the user community. At first glance, it sounds like an issue with one of the VMs on the load balancer managed by the network team. How do you proceed?”
+
