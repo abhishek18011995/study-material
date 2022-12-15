@@ -1,0 +1,128 @@
+C#
+---------------------
+1) What is dynamic polymorphism?
+Public int show(ref int x)
+	{
+	return 1;
+	}
+Public int show(out int x)
+	{
+	return 1;
+	}
+work successfully
+2) What is reflection?
+3) How we write events in C# console Application? Give an Example
+4) first or default in LInq?
+5) Ienumerable and Iquerable difference?
+6) Private and static cons.
+7) Tuple in C#
+8) Program to print a reverse of string
+9) Which loop is fastest in all of the loops.
+10) Var and dynamic diff
+11) Extension method --
+12) Tuple in C#
+13) Tempdata and session diff.
+14) Var and dynamic diff
+15) Generic methods
+16) String and Stringbuilder
+17) WHat is async and await?
+18) Give an example of thearding in programming.
+19) Abstract clas and interface 
+20) Wrapper class
+21) Difference b/w Desgin priciples and Design pattern. --
+22) Which desgin pattern/design principles you are using in your project?
+23) Iquerable vs Ienumerable
+24) Managed & unmanaged code
+25) Readonly vs const
+26) Diffenece b/w sql and nosql DB.
+
+
+
+.Net core
+-------------------
+
+1) What is .net core and why we prefer .Net core over MVC or Asp.net.
+1) What is dependancy Injection?
+2) What is Middleware? Have you created any of the middleware? Expalin the steps?
+4) What is the use of "Map" extension while adding middleware to ASP.NET Core pipeline?
+5) What is In-memory cache?
+6) What is loose coupling and Tight coupling?
+7) Difference b/w run & use.
+
+## Have you worked on which architeccture pattern of application? What is onion architecture?
+## What is singleton design pattern?
+
+Crystal Report
+------------------------
+1) How we implement condition in crystal report and how to pass the data in cryatal report?
+
+API
+------------------------
+1) What is CORS error? How to enable Cross-Origin Requests (CORS) in ASP.NET Core?
+2) which type of API we prefer most? Rest or Soap API.
+3) Web API returns which type of response? 
+4) How we set security in Web API?
+5) Differnce between REST API and soap services
+
+JQUery
+---------------
+1) Chaining function
+2) Callback function
+3) WHich function runn first when we run Jquery?
+4) Seelctors
+5) Array value 5 option
+
+SQL-
+----------------------
+1) In a table I wan to print Male as M and Female as F in a table.
+2) Query to copy data from one table to another table with schema.
+3) Raise error in SQL?
+4) Types of subquery
+5) What is acid property in SQL.
+6) Handle tyr catch inside a table.
+7) differnce Rank, dense rank and row_number
+8) magic table
+9) Where the temporary tables are created
+10) What is CTE
+11) Difference between view or temporary table?
+12) Indexing in SQL
+
+MVC-
+-------------------------- 
+1) Task of JSONResult
+2) Action filters in MVC
+3) HOw to create a custom action filter
+4) What does return route function do?
+5) Tempdata, ViewData, ViewBag
+6) What is Solid principle?
+
+
+Angular
+----------------------
+1) What is angular?
+2) What are Annotations in Angular?
+3) Where we maintain all the details in angular app?
+4) Explain the lifecycle hooks in Angular?
+In Angular, every component has a lifecycle. Angular creates and renders these components and also destroys them before removing them from the DOM. This is achieved with the help of lifecycle hooks. Here's the list of them - 
+
+ngOnChanges() - Responds when Angular sets/resets data-bound input properties.
+ngOnInit() - Initialize the directive/component after Angular first displays the data-bound properties and sets the directive/component's input properties/
+ngDoCheck() - Detect and act upon changes that Angular can't or won't detect on its own.
+ngAfterContentInit() - Responds after Angular projects external content into the component's view.
+ngAfterContentChecked() - Respond after Angular checks the content projected into the component.
+ngAfterViewInit() - Respond after Angular initializes the component's views and child views.
+ngAfterViewChecked() - Respond after Angular checks the component's views and child views.
+ngOnDestroy - Cleanup just before Angular destroys the directive/component.
+5) What is String Interpolation in Angular?
+6) What is the difference between AOT and JIT?
+7) Explain the @Component Decorator.
+8) What are Services in Angular? 
+9) What are Promises and Observables in Angular?
+
+
+Generic
+------------------------------------
+1) What all types of w=authentication you have used?
+2)
+
+=======================================
